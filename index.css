@@ -1,0 +1,59 @@
+html{
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  background-color: #85dee7;
+  width: 100%;
+}
+
+.indice {
+  position: relative;
+  width:200px;
+  height: 70vh;
+  background:#38b6c3;
+  font-size:1em;
+  float:left;
+
+}
+.nav {
+  position: right;
+  text-align: center;
+  top: 50%;
+  font-weight: bold;
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+    position:relative;
+    margin: 1.2em 0;
+    margin-right: 15%;
+}
+.nav ul li a {
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 0.1em;
+    color: white;
+    display:block;
+    transition: all ease-out 300ms;
+}
+section {
+margin-left: 260px;
+margin-top: 50px;
+text-align: justify;
+width:50%;
+}
+footer{
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  color: white;
+}
