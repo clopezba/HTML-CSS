@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="css/index.css" type="text/css">
   </head>
   <body>
-
-    <h1 class="tit"><img class="logo" src="img/logo_html5.png" width=70 height=70 alt="Logo HTML5"> <u>El lenguaje HTML5</u></h1>
-    <aside class="indice">
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Introducción</a></li>
-          <li><a href="formato.html">Formato HTML</a></li>
-          <li><a href="">Elementos agrupación</a></li>
-          <li><a href="">Elementos semánticos</a></li>
-          <li><a href="">Cantenido encajado</a></li>
-          <li><a href="">Contenido tabulado</a></li>
-          <li><a href="">Modelos de contenido</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <section class="formato">
+    <header>
+      <h1 id="tit"><img class="logo" src="img/logo_html5.png" width=70 height=70 alt="Logo HTML5"> <u>El lenguaje HTML5</u></h1>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="index.html#hist">Historia</a></li>
+        <li><a href="formato.html">Formato HTML</a></li>
+        <li><a href="">Elementos agrupación</a></li>
+        <li><a href="">Elementos semánticos</a></li>
+        <li><a href="">Cantenido encajado</a></li>
+        <li><a href="">Contenido tabulado</a></li>
+        <li><a href="">Modelos de contenido</a></li>
+      </ul>
+    </nav>
+    <article>
       <h1>Formato de HTML</h1>
       <img class="formt" src="img/formato_basico.png" alt="Formato básico de HTML" width="250" height="175">
       <p>El formato básico que presenta un documento HTML es el que se muestra en la figura.</p>
@@ -32,7 +32,26 @@
         <li>El primer elemento de HTML es <i>head</i>, es opcional pero recomendado ponerlo. Incluye los <b>metadatos</b>, información sobre el documento.</li>
         <li><i>Body</i> es el <b>cuerpo del documento</b>. Todo el contenido que se mostrará se incluye aquí.</li>
       </ul>
-    </section>
-    <footer><small><b>Cristina López Bachiller</b> - Lenguaje de marcas- 1ºDAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></footer>
+      <p>El formato de <u>etiqueta</u> en HTML es el mismo que en XML: <b>&lsaquo;elemento&rsaquo;.</b><br>
+      De la misma forma que la etiqueta de cierre es <b>&lsaquo;/elemento&rsaquo;.</b><br>
+      Pero sí hay una diferencia con respecto a XML ya que los elementos vacíos <strong>no llevan etiqueta de cierre.</strong></p>
+      <p>En el caso de los <u>atributos</u>, también se indican igual que en lenguaje XML, pero en este caso no es necesario poner las comillas (" "). <wbr>Sí es interesante ponerlas cuando haya
+      espacios en blanco o caracteres raros.</p>
+      <aside><hr><small>El <u>atributo "lang"</u> no es obligatorio, pero sí recomendado. Indica el idioma del texto del documento. Este atributo no necesariamente se debe poner en la etiqueta <b>&lsaquo;/elemento&rsaquo;</b>, sino que se puede poner en
+      cualquier otro elemento (ej. poner una cita en otro idioma).</small><hr></aside><br>
+      <section>
+        <h2>Head</h2>
+        <h3>Título</h3>
+        <p>El elemento <b>&lsaquo;title&rsaquo;</b> representa el título principal de todo el documento HTML. Éste se mostrará en el nombre de la ventana/pestaña del navegador o cuando se guarde como favorito o en marcadores.<br>
+        Es un metadato, por lo que no se mostrará en el contenido de la página, y se debe incluir dentro de <b>&lsaquo;head&rsaquo;.</b></p>
+        <h3>Metadatos</h3>
+        <p>Los metadatos son los datos sobre el documento que no se muestran. Se indican con el elemento <b>&lsaquo;meta&rsaquo;</b> y existen muchos tipos distintos.<br>
+        Los principales usos del elemento <b>&lsaquo;meta&rsaquo;</b> son "charset" y "name".</p>
+        <dl>
+          <dt><u>Charset</u></dt><dd>Especifica la codificación de caracteres del documento. La más habitual es <b>utf-8</b>, que es un conjunto de caracteres universal que incluye casi todos los caracteres de casi cualquier idioma humano.
+        </dl>
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
   </body>
 </html>

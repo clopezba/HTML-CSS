@@ -6,7 +6,7 @@ body {
   padding-top: 50px;
   padding-right: 50px;
 }
-.tit{
+#tit{
   position:inherit;
   width:80%;
   text-align: center;
@@ -15,7 +15,7 @@ body {
   font-variant: small-caps;
 }
 
-.indice {
+#indice {
   position:inherit;
   width:200px;
   height: 70vh;
@@ -23,17 +23,17 @@ body {
   font-size:1em;
   float:left;
 }
-.nav ul {
+#indice ul {
   list-style: none;
 }
-.nav ul li {
+#indice ul li {
     position:relative;
     margin: 1.2em 0;
     margin-right: 15%;
     text-align: center;
     font-weight: bold;
 }
-.nav ul li a {
+#indice ul li a {
     line-height: 1.5em;
     text-transform: uppercase;
     text-decoration:none;
@@ -42,8 +42,8 @@ body {
     display:block;
     transition: all ease-out 300ms;
 }
-section {
-margin-left: 260px;
+article {
+margin-left: 240px;
 margin-top: 50px;
 text-align: justify;
 width:100%;
@@ -56,17 +56,26 @@ width:100%;
   background-color: #8fe4ec;
   text-align: center;
 }
+
 .historia{
   display: block;
   margin:auto;
+  border-style: double;
+  border-width: thick;
+  border-color: #38b6c3;
 }
 .formt{
-  
   float: right;
   margin-left: 10px;
   border-style: double;
   border-width: thick;
   border-color: #38b6c3;
+}
+aside{
+  text-align: center;
+}
+h2 {
+  text-align: center;
 }
 footer{
   text-align: center;
