@@ -52,9 +52,11 @@ width:100%;
   border-width: thick;
   border-style: double;
   border-color: #38b6c3;
-  padding: 10px;
-  background-color: #8fe4ec;
-  text-align: center;
+  padding: 20px;
+  background-color: #EBD7E1;
+  color: #993366;
+  text-align: left;
+  display: inline-block;
 }
 
 .historia{
