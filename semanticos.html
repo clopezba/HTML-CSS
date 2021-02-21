@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/logo_html5.png" width=120 height=120 alt="Logo HTML5">
+      <h1 id="tit"> <u>EL LENGUAJE HTML5</u></h1>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="index.html#hist">Historia</a></li>
+        <li><a href="formato.html">Formato HTML</a></li>
+        <li><a href="agrupacion.html">Elementos agrupación</a></li>
+        <li><a href="semanticos.html">Elementos semánticos</a></li>
+        <li><a href="">Cantenido encajado</a></li>
+        <li><a href="">Contenido tabulado</a></li>
+        <li><a href="">Modelos de contenido</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Los elementos semánticos</h1>
+      <p>La semántica del texto en línea HTML se utiliza para definir el significado, estructura, o el estilo de una palabra, una línea
+      o cualquier pieza arbitraria de texto. En este apartado se verán también los hiperenlaces y cómo se indican en HTML.<br>Algunos de los elementos
+      más utilizados se describen a continuación.</p>
+      <section>
+        <h2>Elementos de resaltado</h2>
+        <p>Habitualmente los textos están formados por elementos como palabras en negrita, subrayadas o en cursiva, o se quiere marcar un parte del texto
+        que es más importante que el resto. HTML proporciona varias etiquetas para marcar cada uno de los diferentes tipos de texto.</p>
+        <h3>Bastardilla (<i>italic</i>)</h3>
+        <p>Muestra el texto marcado con un estilo en cursiva o itálica. Se indica con la etiqueta <b>&lsaquo;i&rsaquo;</b>.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Este texto tiene una palabra en <b>&lsaquo;i&rsaquo;</b>cursiva<b>&lsaquo;/i&rsaquo;</b>.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Este texto tiene una palabra en <i>cursiva</i>.</p>
+        <h3>Negrita (<i>bold</i>)</h3>
+        <p>Indica que el texto debe ser representado con una variable <i>bold</i>, o negrita, de la tipografía que se esté usando. La etiqueta que se utiliza es
+        <b>&lsaquo;b&rsaquo;</b></p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Este texto tiene una palabra en <b>&lsaquo;b&rsaquo;</b>negrita<b>&lsaquo;/b&rsaquo;</b>.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Este texto tiene una palabra en <b>negrita</b>.</p>
+        <h3>Subrayada (<i>underlined</i>)</h3>
+        <p>Muestra el texto subrayado al indicarlo con la etiqueta <b>&lsaquo;u&rsaquo;</b>.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Este texto tiene una palabra <b>&lsaquo;u&rsaquo;</b>subrayada<b>&lsaquo;/u&rsaquo;</b>.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Este texto tiene una palabra <u>subrayada</u>.</p>
+        <h3>Énfasis (<i>emphasis</i>)</h3>
+        <p>El elemento <b>&lsaquo;em&rsaquo;</b> se utiliza para marcar con énfasis o recalcar las partes importantes de un texto. En HTML <b>&lsaquo;em&rsaquo;</b> es
+        visualmente similar a la cursiva, pero solo se debe utilizar si es una parte importante. Si no, se utiliza la cursiva.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Este texto tiene una <b>&lsaquo;em&rsaquo;</b>parte importante<b>&lsaquo;/em&rsaquo;</b>.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Este texto tiene una palabra <em>parte importante</em>.</p>
+        <h3>Strong</h3>
+        <p>De forma similar a <b>&lsaquo;em&rsaquo;</b>, el elemento <i>strong</i> se utiliza para marcar con especial énfasis las partes más importantes o urgentes de
+        un texto. Se indica con la etiqueta <b>&lsaquo;strong&rsaquo;</b>.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b><b>&lsaquo;em&rsaquo;</b>El dinero<b>&lsaquo;/em&rsaquo;</b> es importante pero <b>&lsaquo;strong&rsaquo;</b>la salud
+        <b>&lsaquo;/strong&rsaquo;</b> lo es más.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco"><em>El dinero</em> es importante pero <strong>la salud</strong> lo es más.</p>
+        <h3>Small</h3>
+        <p>Este elemento hace el tamaño del texto un nivel más pequeño que el tamaño mínimo de fuente del navegador. En HTML5, este elemento es utilizado en para
+        representar comentarios laterales y letra pequeña. Se indica con la etiqueta <b>&lsaquo;small&rsaquo;</b>.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Texto en tamaño normal // <b>&lsaquo;small&rsaquo;</b>texto en letra pequeña<b>&lsaquo;/small&rsaquo;</b>.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Texto normal // <small>texto en letra pequeña</small>.</p>
+        <h3>S</h3>
+        <p>Muestra el texto tachado con una línea horizontal. Representa contenido irrelevante u obsoleto. La etiqueta que se utiliza es <b>&lsaquo;s&rsaquo;</b>.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Texto normal y... <b>&lsaquo;s&rsaquo;</b>texto tachado<b>&lsaquo;/s&rsaquo;</b>.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Texto normal y... <s>texto tachado</s>.</p>
+      </section>
+      <section>
+        <h2>Saltos de línea</h2>
+        <h3>Break</h3>
+        <p>El elemento HTML <i>line break</i> produce un salto de línea en el texto. Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.
+        Para introducir un salto de línea a nuestro texto, pondremos la etiqueta <b>&lsaquo;br&rsaquo;</b>.<br>*Este elemento no lleva etiqueta de cierre.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Este párrafo contiene un <b>&lsaquo;br&rsaquo;</b> salto de línea.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Este párrafo contiene un <br> salto de línea.</p>
+        <h3>Word break</h3>
+        <p>El elemento <i>word break</i> (<b>&lsaquo;wbr&rsaquo;</b>) representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea, aunque sus reglas
+        de salto de línea de otra manera no crearían un salto en esa posición.</p>
+      </section>
+      <section>
+        <h2>Links</h2>
+        <p><b>Un identificador de recursos uniforme</b> o <b>URI</b> (<i>Uniform Resource Identifier</i>) es una cadena de caracteres que identifica los recursos de una red de forma unívoca.
+        Pueden ser un localizador de recursos uniforme(<b>URL</b>), un nombre de recurso uniforme (<b>URN</b>) o ambos.</p>
+        <h3>Partes de un URL (<i>Uniform Resource Locator</i>)</h3>
+        <img class="marco" src="img/url.png" alt="Partes de un URL" width="500px" height="75px">
+        <ul type="none">
+          <li><b>Esquema</b> &#129042; http, ftp, mailto, etc.</li>
+          <li><b>Usuario</b> &#129042; nombre del usuario en el servidor si es necesaria la autorización.</li>
+          <li><b>Contraseña</b> &#129042; se pone junto al usuario si es necesaria la autenticación.</li>
+          <li><b>Servidor</b> &#129042; nombre de la máquina.</li>
+          <li><b>Puerto</b> &#129042; de servicio. Hay que indicarlo cuando no está en el puerto estándar.</li>
+          <li><b>Localización</b> &#129042; ruta al recurso en el servidor. Si no lo indicamos, de forma predeterminada lo interpreta como 'index.html'.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Hiperenlace</h2>
+        <h3>Anchor</h3>
+        <p>El elemento <i>anchor</i> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.
+        <br>Se especifica con la etiqueta <b>&lsaquo;a&rsaquo;</b> seguida del atributo <b>href</b>, en el que se indicará la localización o URL.</p>
+        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Este texto contiene un enlace a la página principal de <b>&lsaquo;a href="http://www.google.com"&rsaquo;</b>Google<b>&lsaquo;/a&rsaquo;</b>.<b>&lsaquo;/p&rsaquo;</b></p>
+        <p class="marco">Este texto contiene un enlace a la página principal de <a href="http://www.google.com">Google</a>.</p>
+        <h4>Internos</h4>
+        <p>Son los que se dan entre páginas web del mismo dominio, hay dos tipos:</p>
+        <h5>Absolutos</h5>
+        <p>Dentro del atributo <b>href</b> la URL puede escribirse de forma absoluta, es decir, incluyendo el dominio.</p>
+        <p class="marco">http://sitio/pagina.html</p>
+        <h5>Relativos</h5>
+        <p>La URL se escribe de forma relativa si no incluimos el dominio, dejando solo la localización.</p>
+        <ul class="marco" type="none">
+          <li>Página del <b>mismo directorio</b> &#129042; pagina.html</li>
+          <li>Página de un <b>subdirectorio</b> &#129042; subdirectorio/pagina.html</li>
+          <li>Página del <b>directorio anterior</b> &#129042; ../pagina.html</li>
+        </ul>
+        <h4>De posición</h4>
+        <h5>Internos</h5>
+        <p>Se trata de un enlace a un lugar concreto dentro del mismo documento o página web. <br>De forma genérica, si quremos ir al principio del documento se referencia con el identificador <b>#top</b>.</p>
+        <p><u>Identificafor de elemento</u></p>
+        <p class="marco"><b>&lsaquo;elemento id="elementoX"&rsaquo;</b>Elemento X<b>&lsaquo;/elemento&rsaquo;</b></p>
+        <p><u>Referencia al elemento</u></p>
+        <p class="marco"><b>&lsaquo;a href="#elementoX"&rsaquo;</b><u>Enlace a elemento X</u><b>&lsaquo;/a&rsaquo;</b></p>
+        <h5>Generales</h5>
+        <p>Referencia desde otro documento o página. Se debe indicar cuál es la URL del documento y concatenar a la misma el identificador del lugar concreto al que queramos enlazar.</p>
+        <p class="marco">Enlace a un <b>&lsaquo;a href="URL#identificador"&rsaquo;</b><u>lugar concreto</u><b>&lsaquo;/a&rsaquo;</b> de otro documento.</p>
+        <h3>Atributos (si usamos href)</h3>
+        <dl>
+          <dt>Download:</dt>
+          <dd>Se utiliza, por ejemplo, cuando queremos descargar el documento enlazado en vez de visualizarlo.</dd>
+          <dd>Podemos poner de forma opcional el nombre que tendrá cuando se descargue:</dd>
+          <dd class="marco"><b>&lsaquo;a href="/mifoto.jpg" download="Foto_Cristina"&rsaquo;</b></dd>
+          <dt><br>Target:</dt>
+          <dd>Se utiliza para especificar dónde abrir el documento enlazado. Por ejemplo, para que se abra en una pestaña o ventana nueva se indica con <b>'_blank'</b>:</dd>
+          <dd class="marco"><b>&lsaquo;a href="/mifoto.jpg" download="Foto_Cristina" target="_blank"&rsaquo;</b></dd>
+        </dl>
+        <hr>
+        <aside>
+          <small>
+            <h2>Hiperenlace en HTML4</h2>
+            <p>A diferencia de HTML5, en la especificación anterior de HTML en vez de indicar el destino del enlace con un identificador, se establecía un punto de anclaje llamado <b>name</b>.</p>
+            <p class="marco">Este texto tiene un <b>&lsaquo;a name="anclaje"&rsaquo;</b>lugar<b>&lsaquo;/a&rsaquo;</b> referenciable desde otro sitio.</p>
+            <p class="marco">Y al pinchar <b>&lsaquo;a href="anclaje"&rsaquo;</b><u>aquí</u><b>&lsaquo;/a&rsaquo;</b>, el navegador se sitúa en ese lugar.</p>
+          </small>
+        </aside>
+        <hr>
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>

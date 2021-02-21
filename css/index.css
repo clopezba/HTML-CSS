@@ -1,20 +1,28 @@
 body {
   margin-bottom: 25px;
-  background-color: #85dee7;
   width: 60%;
   padding-left: 50px;
   padding-top: 50px;
   padding-right: 50px;
+  background-color:#85dee7;
+  background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
+  radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+  background-size:80px 80px;
+  background-position:0 0, 40px 40px;
+}
+.logo{
+  position:inherit;
+  margin-left: 50px;
 }
 #tit{
-  position:inherit;
-  width:80%;
+  position:elative;
   text-align: center;
   margin-left: 200px;
   font-family:Chalkduster, fantasy;
-  font-variant: small-caps;
+  font-size: 3em;
+  display: inline;
+  vertical-align:top;
 }
-
 #indice {
   position:inherit;
   width:200px;
@@ -44,15 +52,17 @@ body {
 }
 article {
 margin-left: 240px;
-margin-top: 50px;
 text-align: justify;
-width:100%;
+width:110%;
+padding: 60px;
+background-color: #85dee7;
 }
 .marco{
   border-width: thick;
   border-style: double;
   border-color: #38b6c3;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
   background-color: #EBD7E1;
   color: #993366;
   text-align: left;
