@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/logo_html5.png" width=120 height=120 alt="Logo HTML5">
+      <h1 id="tit"> <u>EL LENGUAJE HTML5</u></h1>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="index.html#hist">Historia</a></li>
+        <li><a href="formato.html">Formato HTML</a></li>
+        <li><a href="agrupacion.html">Elementos agrupación</a></li>
+        <li><a href="semanticos.html">Elementos semánticos</a></li>
+        <li><a href="encajado.html">Contenido encajado</a></li>
+        <li><a href="tabulado.html">Contenido tabulado</a></li>
+        <li><a href="">Modelos de contenido</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Contenido tabulado</h1>
+      <section>
+        <h2>Tablas</h2>
+        <p>Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas. Permite buscar con rapidez y facilidad valores entre
+        diferentes tipos de datos que indiquen algún tipo de conexión.</p>
+        <p>El elemento principal para insertar una tabla es <b>&lsaquo;table&rsaquo;</b>, que podrá contener los siguientes elementos:</p>
+        <ul>
+          <li>Fila (table row): <b>&lsaquo;tr&rsaquo;</b><b>&lsaquo;/tr&rsaquo;</b></li>
+          <li>Columna (table data - celda): <b>&lsaquo;td&rsaquo;</b><b>&lsaquo;/td&rsaquo;</b></li>
+          <li>Títulos tabla (table header): <b>&lsaquo;th&rsaquo;</b><b>&lsaquo;/th&rsaquo;</b> &#129042; Lo pone en negrita. Suelen ser los encabezados
+          de las filas o columnas.</li>
+          <li>Encabezado tabla: <b>&lsaquo;thead&rsaquo;</b><b>&lsaquo;/thead&rsaquo;</b></li>
+          <li>Cuerpo tabla: <b>&lsaquo;tbody&rsaquo;</b><b>&lsaquo;/tbody&rsaquo;</b></li>
+          <li>Sumario tabla: <b>&lsaquo;tfoot&rsaquo;</b><b>&lsaquo;/tfoot&rsaquo;</b></li>
+          <li>Leyenda: <b>&lsaquo;caption&rsaquo;</b><b>&lsaquo;/caption&rsaquo;</b> &#129042; Si hay leyenda, debe ser el primer elemento hijo de la tabla.</li>
+        </ul>
+        <pre class="marco"><b>&lsaquo;table&rsaquo;</b><br>  <b>&lsaquo;caption&rsaquo;</b>Leyenda de tabla<b>&lsaquo;/caption&rsaquo;</b><br>  <b>&lsaquo;thead&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>Tipo Dato A<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>Tipo Dato B<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>Tipo Dato C<b>&lsaquo;/th&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/thead&rsaquo;</b><br>  <b>&lsaquo;tfoot&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>A<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>B<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>C<b>&lsaquo;/td&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/tfoot&rsaquo;</b><br>  <b>&lsaquo;tbody&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>A<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>B<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>C<b>&lsaquo;/td&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>Fin A<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>Fin B<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>FinC<b>&lsaquo;/td&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/tbody&rsaquo;</b><br><b>&lsaquo;/table&rsaquo;</b>
+        </pre>
+        <table border="1">
+          <caption>Leyenda de tabla</caption>
+          <thead>
+            <tr>
+              <th>Tipo Dato A</th>
+              <th>Tipo Dato B</th>
+              <th>Tipo Dato C</th>
+            </tr>
+          </thead>
+          <tfoot><!--Se puede poner en cualquier orden, irá siempre al pie de la tabla-->
+            <tr>
+              <td>Fin A</td>
+              <td>Fin B</td>
+              <td>Fin C</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Atributos tablas</h3>
+        <p>De forma predeterminada la tabla se ajusta automáticamente al contenido y no tiene bordes. Esto se puede modificar con algunos de los
+        atributos que admite o con las hojas de estilo <b>CSS</b>.</p>
+        <ul>
+          <li>Borde (en <i>table</i>): <b>border</b></li>
+          <li>Expansión de columna (en <i>td</i> y <i>th</i>): <b>colspan</b> sirve para combinar celdas de una misma fila.</li>
+          <li>Expansión de fila (en <i>td</i> y <i>th</i>): <b>rowspan</b> sirve para combinar celdas de una misma columna.</li>
+        </ul>
+        <pre class="marco"><b>&lsaquo;table&rsaquo;</b><br>  <b>&lsaquo;caption&rsaquo;</b>Ejemplo colspan y rowspan<b>&lsaquo;/caption&rsaquo;</b><br>  <b>&lsaquo;thead&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>&amp;nbsp;<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>A<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>B<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>C<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>D<b>&lsaquo;/th&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/thead&rsaquo;</b><br>  <b>&lsaquo;tbody&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>1<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>1A<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td colspan="2"&rsaquo;</b>1B+1C<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>1D<b>&lsaquo;/td&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>2<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;td rowspan="3"&rsaquo;</b>2A+3A+4A<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>2B<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>2C<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>2D<b>&lsaquo;/td&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>3<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>3B<b>&lsaquo;/td&rsaquo;</b>
+      <b>&lsaquo;td colspan="2" rowspan="2"&rsaquo;</b>3C+3D+4C+4D<b>&lsaquo;/td&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
+      <b>&lsaquo;th&rsaquo;</b>4<b>&lsaquo;/th&rsaquo;</b>
+      <b>&lsaquo;td&rsaquo;</b>4B<b>&lsaquo;/td&rsaquo;</b>
+    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/tbody&rsaquo;</b><br><b>&lsaquo;/table&rsaquo;</b>
+        </pre>
+        <table border="1">
+          <caption>Ejemplo colspan y rowspan</caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th>A</th>
+              <th>B</th>
+              <th>C</th>
+              <th>D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>1A</td>
+              <td colspan="2">1B+1C</td>
+              <td>1D</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td rowspan="3">2A<br>+3A<br>+4A</td>
+              <td>2B</td>
+              <td>2C</td>
+              <td>2D</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>3B</td>
+              <td colspan="2" rowspan="2">3C+3D<br>+4C+4D</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>4B</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>

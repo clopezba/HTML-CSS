@@ -90,6 +90,21 @@ aside{
 h2 {
   text-align: center;
 }
+table{
+  background-color: #EBD7E1;
+  color: #993366;
+  text-align: center;
+  display: inline-block;
+  border-collapse: collapse;
+  padding: 10px;
+  border-width: thick;
+  border-style: double;
+  border-color: #38b6c3;
+}
+th, caption{
+  padding: 10px 20px;
+  border:none;
+}
 footer{
   text-align: center;
   background-color: black;
