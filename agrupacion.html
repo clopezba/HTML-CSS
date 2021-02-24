@@ -20,7 +20,7 @@
         <li><a href="semanticos.html">Elementos semánticos</a></li>
         <li><a href="encajado.html">Contenido encajado</a></li>
         <li><a href="tabulado.html">Contenido tabulado</a></li>
-        <li><a href="">Modelos de contenido</a></li>
+        <li><a href="modelos-contenido.html">Modelos de contenido</a></li>
       </ul>
     </nav>
     <article>
@@ -55,15 +55,14 @@
         <b>&lsaquo;p&rsaquo;</b>Éste es el segundo párrafo, separado del primero  por una línea horizontal. </p>
         <pre class="marco">Éste es el primer párrafo.<hr>Éste es el segundo párrafo, separado del primero <br>por una línea horizontal.</pre>
       </section>
+      <br><br>
       <section>
         <h2>Listas</h2>
         <p>En HTML se pueden crear listas de información de una forma sencilla. Encontramos dos posibilidades: listas ordenadas y listas desordendas.</p>
         <h3>Listas desordenadas (<i>unordered list</i>)</h3>
         <p>Define una lista de items, en el que su orden no es importante, es decir, si cambiamos el orden no cambiará el sentido del documento. Se trata de una etiqueta contenedora
           que se indica con la etiqueta <b>&lsaquo;ul&rsaquo;</b>.<br></p>
-          <p class="marco"><b>&lsaquo;ul&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Esto<b>&lsaquo;/li&rsaquo;</b><br>
-            &nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Lo otro<b>&lsaquo;/li&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Lo de más allá<b>&lsaquo;/li&rsaquo;</b><br>
-            <b>&lsaquo;/ul&rsaquo;</b></p>
+        <img class="marco" src="img/lista-ul.png" width="140" alt="Ejemplo de sintaxis de HTML para listas desordenadas">
         <ul class="marco">
           <li>Esto</li>
           <li>Lo otro</li>
@@ -73,20 +72,16 @@
         <p>El elemento <b>&lsaquo;ol&rsaquo;</b> permite definir listas o niñetas ordenadas, bien con numeración o alfabéticamente.<br></p>
         <h4><u>Argumentos de <b>&lsaquo;ol&rsaquo;</b></u></h4>
         <dl>
-          <dt>Reversed: <b>&lsaquo;ol reversed&rsaquo;</b></dt><dd>Se utiliza para revertir en orden de los elementos. La enumeración será en orden descendente.</dd><br>
-          <dt>Start: <b>&lsaquo;ol start="valor"&rsaquo;</b></dt><dd>Indica por qué valor empieza la lista. En el caso de ejemplo empezaría por 4:</dd>
-          <p class="marco"><b>&lsaquo;ol start="4"&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>
-            &nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>
-            <b>&lsaquo;/ol&rsaquo;</b></p>
-            <ol class="marco" start="4">
-              <li>Ejemplo</li>
-              <li>Ejemplo</li>
-              <li>Ejemplo</li>
-            </ol>
-          <dt>Type: <b>&lsaquo;ol type="tipo"&rsaquo;</b></dt><dd>Con este argumento podemos elegir el tipo de enumeración. Pudiendo ser una lista con números enteros, letras o números romanos (en minúsculas o mayúsculas): 1 / a / A / i / I</dd>
-          <p class="marco"><b>&lsaquo;ol type="i"&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>
-            &nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>
-            <b>&lsaquo;/ol&rsaquo;</b></p>
+          <dt>Reversed: &lsaquo;ol reversed&rsaquo;</dt><dd>Se utiliza para revertir en orden de los elementos. La enumeración será en orden descendente.</dd><br>
+          <dt>Start: &lsaquo;ol start="valor"&rsaquo;</dt><dd>Indica por qué valor empieza la lista. En el caso de ejemplo empezaría por 4:</dd><br>
+          <img class="marco" src="img/lista-ol-start.png" width="110" alt="Ejemplo de sintaxis de HTML para listas ordenadas">
+          <ol class="marco" start="4">
+            <li>Ejemplo</li>
+            <li>Ejemplo</li>
+            <li>Ejemplo</li>
+          </ol>
+          <dt>Type: &lsaquo;ol type="tipo"&rsaquo;</dt><dd>Con este argumento podemos elegir el tipo de enumeración. Pudiendo ser una lista con números enteros, letras o números romanos (en minúsculas o mayúsculas): 1 / a / A / i / I</dd><br>
+          <img class="marco" src="img/lista-ol-type.png" width="100" alt="Ejemplo de sintaxis HTML para listas ordenadas con atributo de tipo">
             <ol class="marco" type="i">
               <li>Ejemplo</li>
               <li>Ejemplo</li>
@@ -97,18 +92,17 @@
         <p>El elemento <b>&lsaquo;li&rsaquo;</b> declara uno de los elementos de una lista. Se debe poner un <b>&lsaquo;li&rsaquo;</b> por cada elemento.<br>
         Este elemento <b>li</b> admite, a su vez, dos atributos: tipo y valor.</p>
         <dl>
-          <dt>Tipo: <b>&lsaquo;li type="tipo"&rsaquo;</b></dt><dd>Se puede definir el tipo de enumeración que tendrá un elemento de forma aislada. Los diferentes tipos son: disc / square / circle (si no queremos dar un orden); 1 / a / A / i / I (para marcar un orden).</dd><br>
-          <dt>Valor: <b>&lsaquo;li value="valor"&rsaquo;</b></dt><dd>Se utiliza para dar un valor concreto a un elemento expecífico. Los elementos posteriores seguiran a partir de este nuevo valor.</dd>
-        <p class="marco"><b>&lsaquo;ol&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>
-          &nbsp;&nbsp;<b>&lsaquo;li value="7"&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;li&rsaquo;</b>Ejemplo<b>&lsaquo;/li&rsaquo;</b><br>
-          <b>&lsaquo;/ol&rsaquo;</b></p>
-          <ol class="marco">
-            <li>Ejemplo</li>
-            <li value="7">Ejemplo</li>
-            <li>Ejemplo</li>
-          </ol>
+          <dt>Tipo: &lsaquo;li type="tipo"&rsaquo;</dt><dd>Se puede definir el tipo de enumeración que tendrá un elemento de forma aislada. Los diferentes tipos son: disc / square / circle (si no queremos dar un orden); 1 / a / A / i / I (para marcar un orden).</dd><br>
+          <dt>Valor: &lsaquo;li value="valor"&rsaquo;</dt><dd>Se utiliza para dar un valor concreto a un elemento expecífico. Los elementos posteriores seguiran a partir de este nuevo valor.</dd><br>
         </dl>
+        <img class="marco" src="img/lista-li-value.png" width="170" alt="Ejemplo de sintaxis HTML para elementos de una lista con atributo valor">
+        <ol class="marco">
+          <li>Ejemplo</li>
+          <li value="7">Ejemplo</li>
+          <li>Ejemplo</li>
+        </ol>
       </section>
+      <br><br>
       <section>
         <h2>Listas de descripciones (<i>description list</i>)</h2>
         <p>El elemento <b>&lsaquo;dl&rsaquo;</b> encierra una lista de grupos de términos y descripciones. Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos.<br><br>
@@ -118,15 +112,50 @@
         <h3>Datos de la descripción (<i>description data</i>)</h3>
         <p>El elemento <b>&lsaquo;dd&rsaquo;</b> provee la definición u otro texto relacionado que es asociado con el término precedente (<b>&lsaquo;dt&rsaquo;</b>).</p>
         <p>En una lista de descripciones, de forma predeterminada aparecen los datos de las descripción con sangrado a la izquierda.</p>
-        <p class="marco"><b>&lsaquo;dl&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;dt&rsaquo;</b>Término<b>&lsaquo;/dt&rsaquo;</b><br>
-          &nbsp;&nbsp;<b>&lsaquo;dd&rsaquo;</b>Definición<b>&lsaquo;/dd&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;dt&rsaquo;</b>Término<b>&lsaquo;/dt&rsaquo;</b><br>&nbsp;&nbsp;<b>&lsaquo;dd&rsaquo;</b>Definición<b>&lsaquo;/dd&rsaquo;</b><br>
-          <b>&lsaquo;/dl&rsaquo;</b></p>
-          <dl class="marco">
-            <dt>Término</dt>
-            <dd>Definición</dd>
-            <dt>Término</dt>
-            <dd>Definición</dd>
-          </ol>
+        <img class="marco" src="img/lista-dl.png" width="140" alt="Ejemplo de sintaxis de HTML para listas de descripciones">
+        <dl class="marco">
+          <dt>Término</dt>
+          <dd>Definición</dd>
+          <dt>Término</dt>
+          <dd>Definición</dd>
+        </dl>
+      </section>
+      <section>
+        <h2>Elementos contenedores</h2>
+        <h3>Elemento <b>&lsaquo;div&rsaquo;</b></h3>
+        <p>Se trata de un elemento sin significado que sirve para crear secciones o agrupar contenidos en bloque. </p>
+        <h3>Elemento <b>&lsaquo;span&rsaquo;</b></h3>
+        <p>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea ya que del mismo modo que <b>&lsaquo;div&rsaquo;</b>, no tiene significado por sí mismo.</p>
+        <h3>Diferencias entre <b>&lsaquo;div&rsaquo;</b> y <b>&lsaquo;span&rsaquo;</b></h3>
+        <table class="marco">
+          <thead>
+            <tr>
+              <th>Bloque (div)</th>
+              <th>En línea (span)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Comienzan en línea nueva</td>
+              <td>Comienzan en la misma línea</td>
+            </tr>
+            <tr>
+              <td>Ocupan todo el ancho disponible</td>
+              <td>Sólo ocupan el espacio necesario</td>
+            </tr>
+            <tr>
+              <td>Pueden contener otros elementos de bloque o en línea</td>
+              <td>Sólo pueden contener otros elementos en línea</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Contenido dinámico</td>
+              <td>Contenido estático</td>
+            </tr>
+          </tfoot>
+        </table>
+        <img class="marco" src="img/div-span.png" width="450" alt="Figura que muestra diferentes disposiciones de elementos div y span en una página">
       </section>
     </article>
     <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>

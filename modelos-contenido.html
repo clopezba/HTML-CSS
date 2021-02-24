@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/logo_html5.png" width=120 height=120 alt="Logo HTML5">
+      <h1 id="tit"> <u>EL LENGUAJE HTML5</u></h1>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="index.html">Introducción</a></li>
+        <li><a href="index.html#hist">Historia</a></li>
+        <li><a href="formato.html">Formato HTML</a></li>
+        <li><a href="agrupacion.html">Elementos agrupación</a></li>
+        <li><a href="semanticos.html">Elementos semánticos</a></li>
+        <li><a href="encajado.html">Contenido encajado</a></li>
+        <li><a href="tabulado.html">Contenido tabulado</a></li>
+        <li><a href="modelos-contenido.html">Modelos de contenido</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Modelos de contenido</h1>
+      <p>Cada elemento HTML es miembro de una o más categorías de contenido. Estas categorías agrupan elementos que comparten características comunes.</p>
+      <section>
+        <h2>Categorías de contenido principal</h2>
+        <dl>
+          <dt>Contenido de metadatos (<i>metadata</i>)</dt>
+          <dd>Los elementos pertenecientes a la categoría contenido de metadatos modifican la presentación o el comportamiento del resto del documento o
+          establecen enlaces a otros documentos.</dd>
+          <dt>Contenido dinámico (<i>flow</i>)</dt>
+          <dd>Los elementos que pertenecen a la categoria de contenido dinámico suelen contener texto o contenido encajado. Abarca básicamento todos los elementos.</dd>
+          <dt>Contenido seccionado (<i>sectioning</i>)</dt>
+          <dd>Los elementos que pertenecen al modelo de contenido de secciones crean una sección en el esquema actual.</dd>
+          <dt>Contenido del encabezado (<i>heading</i>)</dt>
+          <dd>El contenido del encabezado define el título de una sección, ya sea que esté marcado por un elemento de contenido seccionado explícito o definido
+          implícitamente por el contenido del encabezado en sí mismo.</dd>
+          <dt>Contenido textual (<i>phrasing</i>)</dt>
+          <dd>El contenido textual define el texto y el marcado que contiene. Las series de contenido textual forman párrafos.</dd>
+          <dt>Contenido encajado (<i>embedded</i>)</dt>
+          <dd>El contenido encajado importa otro recurso o inserta contenido al documento, por ejemplo, contenido multimedia.</dd>
+          <dt>Contenido interactico (<i>interactive</i>)</dt>
+          <dd>El contenido interactivo incluye elementos diseñados específicamente para la interacción del usuario.</dd>
+        </dl>
+        <h2>Categorias secundarias</h2>
+        <dl>
+          <dt>Contenido tangible (palpable: flow o phrasing)</dt>
+          <dd>El contenido es palpable cuando no está vacío ni oculto; es contenido que se presenta y es sustantivo. Los elementos cuyo modelo es dinámico (<i>flow</i>)
+          o contenido textual (<i>phrasing</i>) deben tener, por lo menos, un nodo que sea palpable.</dd>
+          <dt>Soporte de scripts (<i>script-supporting</i>)</dt>
+          <dd>Los elementos de soporte de scripts son elementos que no contribuyen directamente a la salida renderizada de un documento. En cambio, sirven para admitir scripts,
+          ya sea conteniendo o especificando directamente el código del script, o especificando datos que serán utilizados por los scripts.</dd>
+          <dd>Las categorías que admiten scripts son: <b>script</b> y <b>template</b>.</dd>
+          <dt>Modelo de contenido transparente (<i>transparent</i>)</dt>
+          <dd>Si un elemento tiene un modelo de contenido transparente, entonces su contenido debe estar estructurado de manera que sea HTML 5 válido, incluso si el elemento
+          transparente fuera eliminado y reemplazado por elementos secundarios.</dd>
+          <dt>Párrafo (<i>paragraph</i>)</dt>
+          <dd>Un párrafo es normalmente una serie de contenido textual que forma un bloque de texto con una o más oraciones que tratan un tema en particular, como en la tipografía,
+          pero también se puede usar para agrupaciones temáticas más generales. </dd>
+        </dl>
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>

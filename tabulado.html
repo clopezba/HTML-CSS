@@ -20,7 +20,7 @@
         <li><a href="semanticos.html">Elementos semánticos</a></li>
         <li><a href="encajado.html">Contenido encajado</a></li>
         <li><a href="tabulado.html">Contenido tabulado</a></li>
-        <li><a href="">Modelos de contenido</a></li>
+        <li><a href="modelos-contenido.html">Modelos de contenido</a></li>
       </ul>
     </nav>
     <article>
@@ -40,24 +40,7 @@
           <li>Sumario tabla: <b>&lsaquo;tfoot&rsaquo;</b><b>&lsaquo;/tfoot&rsaquo;</b></li>
           <li>Leyenda: <b>&lsaquo;caption&rsaquo;</b><b>&lsaquo;/caption&rsaquo;</b> &#129042; Si hay leyenda, debe ser el primer elemento hijo de la tabla.</li>
         </ul>
-        <pre class="marco"><b>&lsaquo;table&rsaquo;</b><br>  <b>&lsaquo;caption&rsaquo;</b>Leyenda de tabla<b>&lsaquo;/caption&rsaquo;</b><br>  <b>&lsaquo;thead&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>Tipo Dato A<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>Tipo Dato B<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>Tipo Dato C<b>&lsaquo;/th&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/thead&rsaquo;</b><br>  <b>&lsaquo;tfoot&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>A<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>B<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>C<b>&lsaquo;/td&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/tfoot&rsaquo;</b><br>  <b>&lsaquo;tbody&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>A<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>B<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>C<b>&lsaquo;/td&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>Fin A<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>Fin B<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>FinC<b>&lsaquo;/td&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/tbody&rsaquo;</b><br><b>&lsaquo;/table&rsaquo;</b>
-        </pre>
+      <img class="marco" src="img/tabulado-tabla.png" width="300" height="450" alt="Ejemplo de sintaxis de HTML para construir una tabla">
         <table border="1">
           <caption>Leyenda de tabla</caption>
           <thead>
@@ -95,32 +78,7 @@
           <li>Expansión de columna (en <i>td</i> y <i>th</i>): <b>colspan</b> sirve para combinar celdas de una misma fila.</li>
           <li>Expansión de fila (en <i>td</i> y <i>th</i>): <b>rowspan</b> sirve para combinar celdas de una misma columna.</li>
         </ul>
-        <pre class="marco"><b>&lsaquo;table&rsaquo;</b><br>  <b>&lsaquo;caption&rsaquo;</b>Ejemplo colspan y rowspan<b>&lsaquo;/caption&rsaquo;</b><br>  <b>&lsaquo;thead&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>&amp;nbsp;<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>A<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>B<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>C<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>D<b>&lsaquo;/th&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/thead&rsaquo;</b><br>  <b>&lsaquo;tbody&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>1<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>1A<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td colspan="2"&rsaquo;</b>1B+1C<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>1D<b>&lsaquo;/td&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>2<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;td rowspan="3"&rsaquo;</b>2A+3A+4A<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>2B<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>2C<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>2D<b>&lsaquo;/td&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>3<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>3B<b>&lsaquo;/td&rsaquo;</b>
-      <b>&lsaquo;td colspan="2" rowspan="2"&rsaquo;</b>3C+3D+4C+4D<b>&lsaquo;/td&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>    <b>&lsaquo;tr&rsaquo;</b>
-      <b>&lsaquo;th&rsaquo;</b>4<b>&lsaquo;/th&rsaquo;</b>
-      <b>&lsaquo;td&rsaquo;</b>4B<b>&lsaquo;/td&rsaquo;</b>
-    <b>&lsaquo;/tr&rsaquo;</b><br>  <b>&lsaquo;/tbody&rsaquo;</b><br><b>&lsaquo;/table&rsaquo;</b>
-        </pre>
+        <img class="marco" src="img/colspan-rowspan.png" width="400" height="550" alt="Ejemplo de sintaxis de HTML para tabla con colspan y rowspan">
         <table border="1">
           <caption>Ejemplo colspan y rowspan</caption>
           <thead>

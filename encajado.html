@@ -20,7 +20,7 @@
         <li><a href="semanticos.html">Elementos semánticos</a></li>
         <li><a href="encajado.html">Contenido encajado</a></li>
         <li><a href="tabulado.html">Contenido tabulado</a></li>
-        <li><a href="">Modelos de contenido</a></li>
+        <li><a href="modelos-contenido.html">Modelos de contenido</a></li>
       </ul>
     </nav>
     <article>
@@ -33,13 +33,13 @@
         que <u>no lleva etiqueta de cierre</u>.<br>Este elemento requiere que se espeficique el atributo <b>src</b> (<i>source</i>), que contiene la
         ruta de la imagen. Esta ruta puede ser relativa o absoluta. Otros atributos posibles son:</p>
         <dl>
-          <dt><b>Texto alternativo (alt</b>)</dt><dd>Descripción textual de la imagen para usarla en situaciones en que no puede ser vista/mostrada.
+          <dt>Texto alternativo (alt)</dt><dd>Descripción textual de la imagen para usarla en situaciones en que no puede ser vista/mostrada.
           No es obligado ponerlo, pero sí <u>muy recomendado</u>.</dd><br>
-          <dt><b>Width (ancho)</b></dt><dd>Se utiliza para indicar el ancho que tendrá la imagen.</dd><br>
-          <dt><b>Height (alto)</b></dt><dd>Se utiliza para indicar el alto de la imagen.</dd>
+          <dt>Width (ancho)</dt><dd>Se utiliza para indicar el ancho que tendrá la imagen.</dd><br>
+          <dt>Height (alto)</dt><dd>Se utiliza para indicar el alto de la imagen.</dd>
         </dl>
         <p><small>*Si solo ponemos anchura o altura, se mantienen las proporciones. Si pongo las dos y no encajan se deformará la imagen.</small></p>
-        <p class="marco"><b>&lsaquo;img src="foto.jpg" width=200 height=150 alt="Mi foto"&rsaquo;</b></p>
+        <img class="marco" src="img/img.png" width="480" alt="Ejemplo de sintaxis HTML de una imagen">
         <h3>Tipos de imágenes</h3>
         <ul type="none">
           <li><b>Bitmap estáticos (con y sin pérdida)</b> &#129042; PNG, GIF, JPG</li>
@@ -48,6 +48,7 @@
           <li><b>Otros</b> &#129042; PDF, MNG</li>
         </ul>
       </section>
+      <br><br>
       <section>
         <h2>Mapas de imagen</h2>
         <p>Cuando anidas una imagen en un elemento <b>&lsaquo;a&rsaquo;</b>, la imagen entera enlaza a un documento HTML. Un mapa de imagen, por otro lado,
@@ -56,7 +57,7 @@
         identificador del mapa (#nombre_mapa).</p>
         <p>Será necesario crear un mapa, para ello utilizaremos el elemento <b>&lsaquo;map&rsaquo;</b> con un atributo <b>name</b> que indique el nombre
         del mapa.</p>
-        <p class="marco"><b>&lsaquo;img src="foto.jpg" alt="Mi foto" usemap="#mapa"&rsaquo;</b><br><b>&lsaquo;map name="mapa"&rsaquo;</b><b>&lsaquo;/map&rsaquo;</b></p>
+        <img class="marco" src="img/mapa-imagen.png" width="400" alt="Ejemplo de sintaxis de HTML de un mapa de imagen">
         <p>Dentro del elemento <b>&lsaquo;map&rsaquo;</b>, se definen las diferentes regiones o zonas con el <u>elemento vacío</u> <b>&lsaquo;area&rsaquo;</b>, que tiene los
         siguientes atributos:</p>
         <ul type="eclipse">
@@ -67,10 +68,7 @@
           <li><b>Download</b></li>
           <li><b>Target</b></li>
         </ul>
-        <p class="marco"><b>&lsaquo;img src="foto.jpg" alt="Mi foto" usemap="#mapa"&rsaquo;</b><br>
-        <b>&lsaquo;map name="mapa"&rsaquo;</b><br>
-        &nbsp;&nbsp;<b>&lsaquo;area shape="rect" coords="x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>" href="URL" alt=""&rsaquo;</b><br>
-        &nbsp;&nbsp;<b>&lsaquo;area shape="circle" coords="x, y, r" href="URL" alt=""&rsaquo;</b><br><b>&lsaquo;/map&rsaquo;</b></p>
+        <img class="marco" src="img/map-area.png" width="500" alt="Ejemplo de sintaxis HTML para determinar las zonas de un mapa de imagen">
         <h3>Coordenadas</h3>
         <ul class="marco">
           <li>Rect: x-izq, y-sup, x-dcha, y-inf</li>
@@ -78,16 +76,17 @@
           <li>Poly: x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, ..., x<sub>n</sub>, y<sub>n</sub></li>
         </ul>
       </section>
+      <br><br>
       <section>
         <h2>Símbolos especiales</h2>
         <p>HTML fue creado para el alfabeto inglés por lo que posteriormente se tuvo que buscar un sistema para mostrar los denominados 'caracteres especiales'
         que no forman parte de dicho alfabeto. Para ello se utilizan determinadas cadenas de texto que el navegador entiende. </p>
         <p>El formato que se sigue es: <b>&amp;nombre_simbolo;</b>. Algunos ejemplos son:</p>
         <dl>
-          <dt><b>Espacio en blanco:</b></dt><dd>Non-breaking Space &#129042; &amp;nbsp;</dd>
+          <dt>Espacio en blanco:</dt><dd>Non-breaking Space &#129042; &amp;nbsp;</dd>
           <dd>Este símbolo indica que ese espacio en blanco no se podrá usar como salto de línea.</dd>
-          <dt><b>Eñe:</b></dt><dd>&amp;ntilde; &#129042; ñ / &amp;Ntilde; &#129042; Ñ</dd>
-          <dt><b>Acento agudo:</b></dt><dd>&amp;aacute; &#129042; á / &amp;Aacute; &#129042; Á / &amp;eacute; &#129042; é /...</dd>
+          <dt>Eñe:</dt><dd>&amp;ntilde; &#129042; ñ / &amp;Ntilde; &#129042; Ñ</dd>
+          <dt>Acento agudo:</dt><dd>&amp;aacute; &#129042; á / &amp;Aacute; &#129042; Á / &amp;eacute; &#129042; é /...</dd>
         </dl>
       </section>
     </article>
