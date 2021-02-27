@@ -4,30 +4,55 @@
     <meta charset="utf-8">
     <meta name="author" content="Cristina">
     <title>HTML5 y CSS - Cristina López</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="estilos_css/html.css" type="text/css">
   </head>
   <body>
     <header>
       <img class="logo" src="img/logo_html5.png" width=120 height=120 alt="Logo HTML5">
       <h1 id="tit"> EL LENGUAJE HTML5</h1>
+      <nav id="horiz"><ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="index.html">HTML5</a>
+          <ul><li><a href="index.html#hist">Historia</a></li>
+          <li><a href="formato.html">Formato HTML</a></li>
+          <li><a href="agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="semanticos.html">Elementos semánticos</a></li>
+          <li><a href="encajado.html">Contenido encajado</a></li>
+          <li><a href="tabulado.html">Contenido tabulado</a></li>
+          <li><a href="modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li><a href="css/css-index.html">CSS</a>
+          <ul><li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="">Estructura vs. formato</a></li>
+          <li><a href="">Sintaxis CSS</a></li>
+          <li><a href="">Color</a></li>
+          <li><a href="">Fuentes</a></li>
+          <li><a href="">Texto</a></li>
+          <li><a href="">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="#">Recursos Web</a></li>
+    </ul></nav>
     </header>
-    <nav id="indice">
-      <ul>
-        <li><a href="index.html">Introducción</a></li>
-        <li><a href="index.html#hist">Historia</a></li>
-        <li><a href="formato.html">Formato HTML</a></li>
-        <li><a href="agrupacion.html">Elementos agrupación</a></li>
-        <li><a href="semanticos.html">Elementos semánticos</a></li>
-        <li><a href="encajado.html">Contenido encajado</a></li>
-        <li><a href="tabulado.html">Contenido tabulado</a></li>
-        <li><a href="modelos-contenido.html">Modelos de contenido</a></li>
-      </ul>
-    </nav>
+    <aside>
+      <nav id="indice">
+        <ul>
+          <li><a href="#agrup">Agrupaciones</a></li>
+          <li><a href="#list">Listas</a></li>
+          <li><a href="#listdes">Listas de descripciones</a></li>
+          <li><a href="#cont">Elementos contenedores</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!--<aside>
+      <nav id="arriba">
+        <a href="#top">&uarr; Subir</a>
+      </nav>
+    </aside>-->
     <article>
       <h1>Los elementos de agrupación</h1>
       <p>En HTML existen una serie de etiquetas que tienen como función agrupar y organizar la información. A continuación veremos las etiquetas más utilizadas con este propósito.</p>
       <section>
-        <h2>Agrupaciones</h2>
+        <h2 id=agrup>Agrupaciones</h2>
         <p>Las siguientes etiquetas se utilizan para agrupar información:</p>
         <h3>Párrafo (<i>paragraph</i>)</h3>
         <p>Se indica con la etiqueta <b>&lsaquo;p&rsaquo;</b>. Define un párrafo de texto.<br>El elemento <b>p</b> no debería utilizarse si otro elemento más específico es más apropiado.</p>
@@ -55,9 +80,13 @@
         <b>&lsaquo;p&rsaquo;</b>Éste es el segundo párrafo, separado del primero  por una línea horizontal. </p>
         <pre class="marco">Éste es el primer párrafo.<hr>Éste es el segundo párrafo, separado del primero <br>por una línea horizontal.</pre>
       </section>
-      <br><br>
+      <br><aside>
+        <nav id="arriba">
+          <a href="#top">&uarr; Subir</a>
+        </nav>
+      </aside><br>
       <section>
-        <h2>Listas</h2>
+        <h2 id=list>Listas</h2>
         <p>En HTML se pueden crear listas de información de una forma sencilla. Encontramos dos posibilidades: listas ordenadas y listas desordendas.</p>
         <h3>Listas desordenadas (<i>unordered list</i>)</h3>
         <p>Define una lista de items, en el que su orden no es importante, es decir, si cambiamos el orden no cambiará el sentido del documento. Se trata de una etiqueta contenedora
@@ -102,9 +131,13 @@
           <li>Ejemplo</li>
         </ol>
       </section>
-      <br><br>
+      <br><aside>
+        <nav id="arriba">
+          <a href="#top">&uarr; Subir</a>
+        </nav>
+      </aside><br>
       <section>
-        <h2>Listas de descripciones (<i>description list</i>)</h2>
+        <h2 id=listdes>Listas de descripciones (<i>description list</i>)</h2>
         <p>El elemento <b>&lsaquo;dl&rsaquo;</b> encierra una lista de grupos de términos y descripciones. Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos.<br><br>
         En este tipo de listas no se utiliza el elemento <b>&lsaquo;li&rsaquo;</b>, sino que, al tratarse de asociaciones de pares 'término-descripción', utilizaremos los elementos que se muestras a continuación:</p>
         <h3>Término de la descripción (<i>description term</i>)</h3>
@@ -120,8 +153,13 @@
           <dd>Definición</dd>
         </dl>
       </section>
+      <br><aside>
+        <nav id="arriba">
+          <a href="#top">&uarr; Subir</a>
+        </nav>
+      </aside><br>
       <section>
-        <h2>Elementos contenedores</h2>
+        <h2 id=cont>Elementos contenedores</h2>
         <h3>Elemento <b>&lsaquo;div&rsaquo;</b></h3>
         <p>Se trata de un elemento sin significado que sirve para crear secciones o agrupar contenidos en bloque. </p>
         <h3>Elemento <b>&lsaquo;span&rsaquo;</b></h3>
@@ -157,6 +195,11 @@
         </table>
         <img class="marco" src="img/div-span.png" width="450" alt="Figura que muestra diferentes disposiciones de elementos div y span en una página">
       </section>
+      <br><aside>
+        <nav id="arriba">
+          <a href="#top">&uarr; Subir</a>
+        </nav>
+      </aside>
     </article>
     <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
   </body>

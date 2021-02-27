@@ -1,3 +1,51 @@
+header{
+  width:1400px;
+}
+#horiz{
+  margin-left: 20%;
+
+}
+
+#horiz a{
+  text-decoration:none;
+  color:inherit;
+  font-size:18px;
+}
+
+#horiz li{
+  display:inline-block;
+  width: 175px;
+  height:30px;
+  padding:10px 5px;
+  background-color:#38b6c3;
+  border:1px solid #38b6c3;
+  text-align:center;
+  color:black;
+  font-weight: bold;
+  position: relative;
+
+
+}
+
+#horiz li:hover{
+  background-color:#85dee7;
+  color:#000;
+}
+
+#horiz li>ul{
+  display:none;
+}
+
+#horiz li:hover>ul{
+  display:block;
+  position:absolute;
+  top:40px;
+  left:0px;
+  background-color:#85dee7;
+  color:#000;
+
+}
+
 body {
   margin-bottom: 25px;
   width: 60%;
@@ -12,16 +60,19 @@ body {
 }
 .logo{
   position:inherit;
-  margin-left: 50px;
+  display: inline;
+  margin-left: 20%;
 }
 #tit{
-  position:elative;
+  position:relative;
   text-align: center;
-  margin-left: 200px;
+  margin-left: 50px;
   font-family:Chalkduster, fantasy;
   font-size: 3em;
   display: inline;
   vertical-align:top;
+  padding: 20px;
+  background-color:#85dee7;
 }
 dt{
   font-weight: bold;
@@ -32,34 +83,46 @@ dt{
   width:200px;
   height: auto;
   background:#38b6c3;
-  font-size:1em;
+  font-size:20px;
   float:left;
 }
 #indice ul {
-  list-style: none;
+  list-style: square;
+  color: white;
 }
 #indice ul li {
     position:relative;
-    margin: 1.2em 0;
-    margin-right: 15%;
+    margin-right: 25%;
+    margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
 }
 #indice ul li a {
     line-height: 1.5em;
-    text-transform: uppercase;
     text-decoration:none;
-    letter-spacing: 0.1em;
     color: white;
     display:block;
     transition: all ease-out 300ms;
 }
+#arriba {
+  position:relative;
+  width:60px;
+  height: 40px;
+  float: right;
+
+}
+#arriba a{
+  font-size:15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 article {
-margin-left: 240px;
-text-align: left;
-width:110%;
-padding: 60px;
-background-color: #85dee7;
+  margin-left: 240px;
+  text-align: left;
+  width:120%;
+  padding: 60px;
+  background-color: #85dee7;
 }
 .marco{
   border-width: thick;
@@ -117,7 +180,8 @@ footer{
   background-color: black;
   position: static;
   bottom: 0;
-  width: 150%;
+  width:130%;
+  margin-left: 240px;
   height: 25px;
   color: white;
 }

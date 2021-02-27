@@ -4,30 +4,46 @@
     <meta charset="utf-8">
     <meta name="author" content="Cristina">
     <title>HTML5 y CSS - Cristina López</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="estilos_css/html.css" type="text/css">
   </head>
   <body>
     <header>
       <img class="logo" src="img/logo_html5.png" width=120 height=120 alt="Logo HTML5">
       <h1 id="tit"> EL LENGUAJE HTML5</h1>
+      <nav id="horiz"><ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="index.html">HTML5</a>
+          <ul><li><a href="index.html#hist">Historia</a></li>
+          <li><a href="formato.html">Formato HTML</a></li>
+          <li><a href="agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="semanticos.html">Elementos semánticos</a></li>
+          <li><a href="encajado.html">Contenido encajado</a></li>
+          <li><a href="tabulado.html">Contenido tabulado</a></li>
+          <li><a href="modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li><a href="css/css-index.html">CSS</a>
+          <ul><li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="">Estructura vs. formato</a></li>
+          <li><a href="">Sintaxis CSS</a></li>
+          <li><a href="">Color</a></li>
+          <li><a href="">Fuentes</a></li>
+          <li><a href="">Texto</a></li>
+          <li><a href="">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="#">Recursos Web</a></li>
+    </ul></nav>
     </header>
     <nav id="indice">
       <ul>
-        <li><a href="index.html">Introducción</a></li>
-        <li><a href="index.html#hist">Historia</a></li>
-        <li><a href="formato.html">Formato HTML</a></li>
-        <li><a href="agrupacion.html">Elementos agrupación</a></li>
-        <li><a href="semanticos.html">Elementos semánticos</a></li>
-        <li><a href="encajado.html">Contenido encajado</a></li>
-        <li><a href="tabulado.html">Contenido tabulado</a></li>
-        <li><a href="modelos-contenido.html">Modelos de contenido</a></li>
+        <li><a href="#catprin">Categorías principales</a></li>
+        <li><a href="#catsec">Categorías secundarias</a></li>
       </ul>
     </nav>
     <article>
       <h1>Modelos de contenido</h1>
       <p>Cada elemento HTML es miembro de una o más categorías de contenido. Estas categorías agrupan elementos que comparten características comunes.</p>
       <section>
-        <h2>Categorías de contenido principal</h2>
+        <h2 id="catprin">Categorías de contenido principal</h2>
         <dl>
           <dt>Contenido de metadatos (<i>metadata</i>)</dt>
           <dd>Los elementos pertenecientes a la categoría contenido de metadatos modifican la presentación o el comportamiento del resto del documento o
@@ -46,7 +62,7 @@
           <dt>Contenido interactico (<i>interactive</i>)</dt>
           <dd>El contenido interactivo incluye elementos diseñados específicamente para la interacción del usuario.</dd>
         </dl>
-        <h2>Categorias secundarias</h2>
+        <h2 id="catsec">Categorias secundarias</h2>
         <dl>
           <dt>Contenido tangible (palpable: flow o phrasing)</dt>
           <dd>El contenido es palpable cuando no está vacío ni oculto; es contenido que se presenta y es sustantivo. Los elementos cuyo modelo es dinámico (<i>flow</i>)

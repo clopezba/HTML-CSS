@@ -4,23 +4,39 @@
     <meta charset="utf-8">
     <meta name="author" content="Cristina">
     <title>HTML5 y CSS - Cristina López</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="estilos_css/html.css" type="text/css">
   </head>
   <body>
     <header>
       <img class="logo" src="img/logo_html5.png" width=120 height=120 alt="Logo HTML5">
       <h1 id="tit"> EL LENGUAJE HTML5</h1>
+      <nav id="horiz"><ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="index.html">HTML5</a>
+          <ul><li><a href="index.html#hist">Historia</a></li>
+          <li><a href="formato.html">Formato HTML</a></li>
+          <li><a href="agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="semanticos.html">Elementos semánticos</a></li>
+          <li><a href="encajado.html">Contenido encajado</a></li>
+          <li><a href="tabulado.html">Contenido tabulado</a></li>
+          <li><a href="modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li><a href="css/css-index.html">CSS</a>
+          <ul><li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="">Estructura vs. formato</a></li>
+          <li><a href="">Sintaxis CSS</a></li>
+          <li><a href="">Color</a></li>
+          <li><a href="">Fuentes</a></li>
+          <li><a href="">Texto</a></li>
+          <li><a href="">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="#">Recursos Web</a></li>
+    </ul></nav>
     </header>
     <nav id="indice">
       <ul>
-        <li><a href="index.html">Introducción</a></li>
-        <li><a href="index.html#hist">Historia</a></li>
-        <li><a href="formato.html">Formato HTML</a></li>
-        <li><a href="agrupacion.html">Elementos agrupación</a></li>
-        <li><a href="semanticos.html">Elementos semánticos</a></li>
-        <li><a href="encajado.html">Contenido encajado</a></li>
-        <li><a href="tabulado.html">Contenido tabulado</a></li>
-        <li><a href="modelos-contenido.html">Modelos de contenido</a></li>
+        <li><a href="formato.html#head">Head</a></li>
+        <li><a href="formato.html#body">Body</a></li>
       </ul>
     </nav>
     <article>
@@ -41,7 +57,7 @@
       <aside><hr><small>El atributo "lang" no es obligatorio, pero sí recomendado. Indica el idioma del texto del documento. Este atributo no necesariamente se debe poner en la etiqueta <b>&lsaquo;html&rsaquo;</b>, sino que se puede poner en
       cualquier otro elemento (ej. poner una cita en otro idioma).</small><hr></aside><br>
       <section>
-        <h2>Head</h2>
+        <h2 id="head">Head</h2>
         <p>En la figura de la derecha se puede ver un ejemplo básico de <i>encabezado</i>.</p>
         <h3>Título</h3>
         <img class="formt" src="img/head.png" alt="Encabezado o 'head' de HTML" width="350" height="225">
@@ -57,7 +73,7 @@
       </section>
       <br><br>
       <section>
-        <h2>Body</h2>
+        <h2 id="body">Body</h2>
         <p>Es la parte visible del documento, donde se incluye todo el contenido que se quiere mostrar. Dentro del <i>cuerpo</i> podemos encontrar diferentes elementos:<br></p>
         <img class="formt" src="img/body.png" alt="Esquema de elementos de cuerpo" weight="250" height="400">
         <dl>
