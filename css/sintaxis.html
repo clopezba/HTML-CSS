@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="../estilos_css/css.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo-css" src="../img/img-css/logo-css.png" width=120 height=120 alt="Logo CSS3">
+      <h1 id="tit"> EL LENGUAJE CSS</h1>
+      <nav id="horiz"><ul>
+        <li><a href="#">Inicio</a></li>
+        <li>HTML5
+          <ul><li><a href="../html-index.html">Introducción</a></li>
+          <li><a href="../html-index.html#hist">Historia</a></li>
+          <li><a href="../formato.html">Formato HTML</a></li>
+          <li><a href="../agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="../semanticos.html">Elementos semánticos</a></li>
+          <li><a href="../encajado.html">Contenido encajado</a></li>
+          <li><a href="../tabulado.html">Contenido tabulado</a></li>
+          <li><a href="../modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li>CSS
+          <ul><li><a href="css-index.html">Introducción</a></li>
+          <li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="estr-form.html">Estructura vs. formato</a></li>
+          <li><a href="sintaxis.html">Sintaxis CSS</a></li>
+          <li><a href="">Color</a></li>
+          <li><a href="">Fuentes</a></li>
+          <li><a href="">Texto</a></li>
+          <li><a href="">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="#">Recursos Web</a></li>
+    </ul></nav>
+    </header>
+    <article>
+      <h1>Sintaxis de CSS</h1>
+      <p>Los bloques básicos de construcción de CSS están formados por pares de palabras separadas por &#39;<b>:</b>&#39;.</p>
+      <p>Se trata de conjuntos de parejas <strong>&quot;propiedad:valor&quot;</strong>, separadas por un &#39;<b>;</b>&#39;. La <b>propiedad</b> es un
+        identificador que define qué características es considerada. El <b>valor</b>, como su nombre indica, describe el valor o valores que toma dicha propiedad.</p>
+      <p>Para indicar a qué elemento se aplica ese estilo, se utiliza un <b>selector</b>. Se trata de un patrón de elementos y otros términos que indican al
+        navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los valores de las propiedades CSS.</p>
+      <p>El formato es: <b>selector</b>[, selector2]<b> {propiedad:valor;</b>[p2:v2;]<b>}</b></p>
+      <h3>Ejemplo</h3>
+      <img class="marco" src="../img/img-css/sintaxis.png" alt="Ejemplo de sintaxis de CSS" width="250">
+      <section>
+        <h2>Tipos de selectores</h2>
+        <h3>Selector de tipo</h3>
+        <p>Es el ejemplo de arriba. Se indica el nombre del elemento/s al que se aplicará el estilo.</p>
+        <h3>Selector de clase</h3>
+        <p>Los selectores de clase buscan un elemento basado en el contenido de su atributo class (indicado en HTML).</p>
+        <p>Se indica poniendo el nombre del elemento seguido de un punto (&#36;<b>.</b>&#39;) y el nombre de la clase: <b>selector.clase {propiedad:valor;}</b></p>
+        <p>En el caso de que una misma clase sea atributo de diferentes elementos y queramos que todos tengan un mismo estilo, el selector no incluirá el nombre
+          del elemento.</p>
+        <h3>Selector de ID</h3>
+        <p>Buscan un elemento basado en el contenido del atributo id. El atributo ID del elemento seleccionado debe coincidir exactamente con el valor dado en
+          el selector. La sintaxis es: <b>#idElemento {propiedad:valor;}</b></p>
+        <p>Al contrario que las clases, los ID son <b>únicos</b> y se refieren únicamente al elemento en el que se indica.</p>
+        <br>
+        <table>
+          <caption><b>Resumen tipos de selectores</b></caption>
+          <tr>
+            <th>Selector de tipo</th>
+            <td>p { propiedad:valor; }</td>
+            <td>&lsaquo;p&rsaquo;Elemento p&lsaquo;/p&rsaquo;</td>
+          </tr>
+          <tr>
+            <th>Selector de clase</th>
+            <td>p.clase { propiedad:valor; }</td>
+            <td>&lsaquo;p class="clase"&rsaquo;Elemento p con atributo clase&lsaquo;/p&rsaquo;</td>
+          </tr>
+          <tr>
+            <th>Selector de ID</th>
+            <td>#idElem { propiedad:valor; }</td>
+            <td>&lsaquo;p id="idElem"&rsaquo;Elemento p con ID&lsaquo;/p&rsaquo;</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Unidades de medida</h2>
+        <h3>Porcentaje</h3>
+        <p>Se trata de una de las medidas más usadas en CSS. Se indica con un número seguido del símbolo <b>&#39;%&#39;</b> y siempre referencia a otra medida
+          (al elemento que lo contiene o al ancho de visualización del dispositivo).</p>
+        <h3>Medidas absolutas</h3>
+        <p>Una medida absoluta está completamente definida, ya que su valor no depende de otro de referencia. Algunos ejemplos son:</p>
+        <ul>
+          <li><b>px (píxel)</b> &rarr; Información de color por punto (1px = 1/96 pulgadas).</li>
+          <li><b>pt (punto)</b> &rarr; Relacionado con la impresión láser. Se utiliza mucho en fotocomposición (1pt = 1/72 pulgadas).</li>
+          <li><b>pc (pica)</b> &rarr; Medida tipográfica tradicional (1pc = 1/6 pulgadas).</li>
+          <li><b>cm, mm, in</b> (<i>inches</i> o pulgadas)</li>
+        </ul>
+        <h3>Medidas relativas</h3>
+        <p>A diferencia de las absolutas, no están completamente definidas, ya que su valor siempre está referenciado respecto a otro valor.</p>
+        <ul>
+          <li><b>em (cuadratín)</b> &rarr; Ancho de letra. Modifica el tamaño de letra en función del tamaño de su elemento contenedor.</li>
+          <li><b>rem</b> &rarr; Es como <i>em</i> pero con respecto al elemento raíz (<i>body</i>), independiente de su contenedor.</li>
+          <li><b>ex (x-height)</b> &rarr; Relativo al tamaño de la letra &#39;x&#39; del tipo y tamaño de letra del elemento.</li>
+        </ul>
+        <aside><hr><small>El valor <b>0.5em</b> se interpreta como <i>la mitad del tamaño de letra del elemento contenedor</i>, ya que se multiplica por 0.5 su
+        tamaño de letra. De la misma manera, un valo de <b>2em</b>, equivaldría al <i>doble de tamaño de la letra.</i></small><hr></aside><br>
+        <h3>Ángulos</h3>
+        <ul>
+          <li><b>deg</b> &rarr; Representa un ángulo en grados. Círculo completo: 360&#176;</li>
+          <li><b>grad</b> &rarr; Representa un ángulo en grado centesimal. Círculo completo: 400&#176;</li>
+          <li><b>rad</b> &rarr; Representa un ángulo en radianes. Círculo completo: 2&pi;</li>
+        </ul>
+        <h3>Duración</h3>
+        <ul>
+          <li><b>s</b> &rarr; Segundos</li>
+          <li><b>ms</b> &rarr; Milisegundos</li>
+        </ul>
+        <h3>Frecuencia</h3>
+        <ul>
+          <li><b>Hz</b> &rarr; Hercios, representan el número de ciclos por segundo.</li>
+          <li><b>kHz</b> &rarr; Kilohercios</li>
+        </ul>
+        <h3>Resolución</h3>
+        <ul>
+          <li><b>dpi</b> &rarr; Puntos por pulgada</li>
+          <li><b>dpcm</b> &rarr; Puntos por centímetro</li>
+          <li><b>dppx</b> &rarr; Puntos por píxel</li>
+        </ul>
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>
