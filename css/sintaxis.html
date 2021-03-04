@@ -27,14 +27,20 @@
           <li><a href="css-index.html#histcss">Historia</a></li>
           <li><a href="estr-form.html">Estructura vs. formato</a></li>
           <li><a href="sintaxis.html">Sintaxis CSS</a></li>
-          <li><a href="">Color</a></li>
-          <li><a href="">Fuentes</a></li>
-          <li><a href="">Texto</a></li>
-          <li><a href="">Modelo caja</a></li></ul>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="fuentes.html">Fuentes</a></li>
+          <li><a href="texto.html">Texto</a></li>
+          <li><a href="mod-caja.html">Modelo caja</a></li></ul>
           </li>
         <li><a href="#">Recursos Web</a></li>
     </ul></nav>
     </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="#select">Tipos selectores</a></li>
+        <li><a href="#medida">Unidades medida</a></li>
+      </ul>
+    </nav>
     <article>
       <h1>Sintaxis de CSS</h1>
       <p>Los bloques básicos de construcción de CSS están formados por pares de palabras separadas por &#39;<b>:</b>&#39;.</p>
@@ -46,7 +52,7 @@
       <h3>Ejemplo</h3>
       <img class="marco" src="../img/img-css/sintaxis.png" alt="Ejemplo de sintaxis de CSS" width="250">
       <section>
-        <h2>Tipos de selectores</h2>
+        <h2 id="select">Tipos de selectores</h2>
         <h3>Selector de tipo</h3>
         <p>Es el ejemplo de arriba. Se indica el nombre del elemento/s al que se aplicará el estilo.</p>
         <h3>Selector de clase</h3>
@@ -59,7 +65,7 @@
           el selector. La sintaxis es: <b>#idElemento {propiedad:valor;}</b></p>
         <p>Al contrario que las clases, los ID son <b>únicos</b> y se refieren únicamente al elemento en el que se indica.</p>
         <br>
-        <table>
+        <table border>
           <caption><b>Resumen tipos de selectores</b></caption>
           <tr>
             <th>Selector de tipo</th>
@@ -79,7 +85,7 @@
         </table>
       </section>
       <section>
-        <h2>Unidades de medida</h2>
+        <h2 id="medida">Unidades de medida</h2>
         <h3>Porcentaje</h3>
         <p>Se trata de una de las medidas más usadas en CSS. Se indica con un número seguido del símbolo <b>&#39;%&#39;</b> y siempre referencia a otra medida
           (al elemento que lo contiene o al ancho de visualización del dispositivo).</p>
@@ -99,7 +105,7 @@
           <li><b>ex (x-height)</b> &rarr; Relativo al tamaño de la letra &#39;x&#39; del tipo y tamaño de letra del elemento.</li>
         </ul>
         <aside><hr><small>El valor <b>0.5em</b> se interpreta como <i>la mitad del tamaño de letra del elemento contenedor</i>, ya que se multiplica por 0.5 su
-        tamaño de letra. De la misma manera, un valo de <b>2em</b>, equivaldría al <i>doble de tamaño de la letra.</i></small><hr></aside><br>
+        tamaño de letra. De la misma manera, un valo de <b>2em</b>, equivaldría al <i>doble de tamaño de la letra.</i></small><hr></aside>
         <h3>Ángulos</h3>
         <ul>
           <li><b>deg</b> &rarr; Representa un ángulo en grados. Círculo completo: 360&#176;</li>

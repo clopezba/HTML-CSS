@@ -4,27 +4,22 @@ body {
   padding-left: 50px;
   padding-top: 50px;
   padding-right: 50px;
-  background-color: #C68EAA ;
+  background-color: white;
   background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.2) 99%),
   radial-gradient(closest-side, transparent 99%, rgba(0,0,0,.2) 99%);
   background-size:80px 80px;
   background-position:0 0, 40px 40px;
 }
 
-.logo-css{
-  margin-left:20%;
-  position:relative;
-
-}
 #tit{
-  position:absolute;
+  position:relative;
+  margin: 50px 30%;
   margin-bottom: 10px;
-  width: 50%;
+  width: 60%;
   text-align: center;
   font-size: 4vw;
-  display: inline;
   padding: 20px;
-  background-color:#C68EAA;
+  background-color:lightgrey;
 }
 #horiz{display:relative;
         width: 100%;
@@ -37,16 +32,16 @@ body {
           width: 16vw;
           height:30px;
           padding:10px 4px;
-          background-color:#99657f;
-          border:1px solid #99657f;
+          background-color:grey;
+          border:1px solid grey;
           text-align:center;
           color:black;
           font-weight: bold;
           position: relative;}
 
 #horiz li:hover{
-  background-color:#C68EAA;
-  color:#000;
+  background-color:lightgrey;
+  color:black;
 }
 
 #horiz li>ul{
@@ -59,28 +54,9 @@ body {
   position:absolute;
   top:40px;
   left:0px;
-  background-color:#C68EAA;
-  color:#000;
+  background-color:lightgrey;
+  color: black;
 }
-/*Navegación apartados internos página*/
-#indice {position:inherit;
-          width:200px;
-          height: auto;
-          background:#99657f;
-          font-size:20px;
-          float:left;}
-#indice ul {list-style: square;
-            color: black;}
-#indice ul li {position:relative;
-              margin-right: 25%;
-              margin-bottom: 15px;
-              text-align: center;
-              font-weight: bold;}
-#indice ul li a {line-height: 1.5em;
-                text-decoration:none;
-                color: black;
-                display:block;
-                transition: all ease-out 300ms;}
 article {
   position: inherit;
   margin-left: 210px;
@@ -90,7 +66,7 @@ article {
   background-color: #C68EAA;
   }
 
-.marco{border-width: thick;
+/*.marco{border-width: thick;
         border-style: double;
         border-color: #99657f;
         padding: 10px;
@@ -103,15 +79,14 @@ article {
 h2 {
   text-align: center;
 }
-table {background-color: #85dee7;
+th, td{background-color: #85dee7;
       color: #73264D;
       text-align: center;
+      padding: 10px;
       border-width:thin;
       border-style: solid;
-      border-color: #99657f;
-      border-collapse:collapse;}
-td, th{padding: 10px;}
-aside{text-align: center;}
+      border-color: #99657f}
+aside{text-align: center;}*/
 footer{text-align: center;
         background-color: black;
         position: static;

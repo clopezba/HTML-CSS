@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="../estilos_css/css.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo-css" src="../img/img-css/logo-css.png" width=120 height=120 alt="Logo CSS3">
+      <h1 id="tit"> EL LENGUAJE CSS</h1>
+      <nav id="horiz"><ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li>HTML5
+          <ul><li><a href="../html-index.html">Introducción</a></li>
+          <li><a href="../html-index.html#hist">Historia</a></li>
+          <li><a href="../formato.html">Formato HTML</a></li>
+          <li><a href="../agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="../semanticos.html">Elementos semánticos</a></li>
+          <li><a href="../encajado.html">Contenido encajado</a></li>
+          <li><a href="../tabulado.html">Contenido tabulado</a></li>
+          <li><a href="../modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li>CSS
+          <ul><li><a href="css-index.html">Introducción</a></li>
+          <li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="estr-form.html">Estructura vs. formato</a></li>
+          <li><a href="sintaxis.html">Sintaxis CSS</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="fuentes.html">Fuentes</a></li>
+          <li><a href="texto.html">Texto</a></li>
+          <li><a href="mod-caja.html">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="#">Recursos Web</a></li>
+    </ul></nav>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="#colseg">Colores seguros</a></li>
+        <li><a href="#tabcol">Tabla colores</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Colores</h1>
+      <p>Para especificar el color que aplicaremos en el estilo de los elementos de un documento HTML existen diferentes formas de indicarlo:</p>
+      <h3>Nombre (palabra clave)</h3>
+      <p>Se puede poner directamento como valor el nombre del color utilizando su palabra clase (en inglés). <br>
+        Ej: black, silver, grey, white, maroon, green, lime, olive, yellow, navy, red, purple, fuchsia, blue, teal, aqua, etc.</p>
+      <h3>Modelo RGB</h3>
+      <h4>Hexadecimal</h4>
+      <ul>
+        <li>#RGB (0-F)</li>
+        <li>#RRGGBB (00-FF)</li>
+      </ul>
+      <h4>rgb/rgba</h4>
+      <p>En el caso de <b>rgba</b>, &#39;a&#39; hace referencia al canal alfa, que indica la transparencia del objeto (0 = transparente, 1 = opaco).</p>
+      <ul>
+        <li>Octetos: rgb(rojo, verde, azul) &rarr; 0-255 cada uno de los tres colores.</li>
+        <li>Porcentajes: rgb(r%, v%, a%) &rarr; 0-100 cada color.</li>
+      </ul>
+      <section>
+        <h2 id="colseg">Colores seguros</h2>
+        <p>Se utilizan para que personas con algún problema visual (ej. daltonismo) puedan ver correctamente el documento.</p>
+        <p>Hay 256 colores seguros: 00, 33, 66, 99, CC, FF</p>
+      </section>
+      <section>
+        <h2 id="tabcol">Tabla de colores básicos</h2>
+        <table border=1>
+          <thead>
+            <tr>
+              <th>Color</th>
+              <th>Nombre</th>
+              <th>RGB Hex</th>
+              <th>Color</th>
+              <th>Nombre</th>
+              <th>RGB Hex</th>
+            </tr>
+          </thead>
+          <tr>
+            <td><img src="../img/img-css/negro.png" alt="Color negro" width="20"></td>
+            <td>black</td>
+            <td>#000000</td>
+            <td><img src="../img/img-css/verde.png" alt="Color verde" width="20"></td>
+            <td>green</td>
+            <td>#008000</td>
+          </tr>
+          <tr>
+            <td><img src="../img/img-css/plata.png" alt="Color plata" width="20"></td>
+            <td>silver</td>
+            <td>#C0C0C0</td>
+            <td><img src="../img/img-css/lima.png" alt="Color lima" width="20"></td>
+            <td>lime</td>
+            <td>#00FF00</td>
+          </tr>
+          <tr>
+            <td><img src="../img/img-css/gris.png" alt="Color gris" width="20"></td>
+            <td>gray</td>
+            <td>#808080</td>
+            <td><img src="../img/img-css/oliva.png" alt="Color oliva" width="20"></td>
+            <td>olive</td>
+            <td>#808000</td>
+          </tr>
+          <tr>
+            <td><img src="../img/img-css/blanco.png" alt="Color blanco" width="20"></td>
+            <td>white</td>
+            <td>#FFFFFF</td>
+            <td><img src="../img/img-css/amarillo.png" alt="Color amarillo" width="20"></td>
+            <td>yellow</td>
+            <td>#FFFF00</td>
+          </tr>
+          <tr>
+            <td><img src="../img/img-css/marron.png" alt="Color marrón" width="20"></td>
+            <td>maroon</td>
+            <td>#800000</td>
+            <td><img src="../img/img-css/azul-marino.png" alt="Color azul marino" width="20"></td>
+            <td>navy</td>
+            <td>#000080</td>
+          </tr>
+          <tr>
+            <td><img src="../img/img-css/rojo.png" alt="Color rojo" width="20"></td>
+            <td>red</td>
+            <td>#FF0000</td>
+            <td><img src="../img/img-css/azul.png" alt="Color azul" width="20"></td>
+            <td>blue</td>
+            <td>#0000FF</td>
+          </tr>
+          <tr>
+            <td><img src="../img/img-css/morado.png" alt="Color morado" width="20"></td>
+            <td>purple</td>
+            <td>#800080</td>
+            <td><img src="../img/img-css/verde-azulado.png" alt="Color verde-azulado" width="20"></td>
+            <td>teal</td>
+            <td>#008080</td>
+          </tr>
+          <tr>
+            <td><img src="../img/img-css/fusia.png" alt="Color fúsia" width="20"></td>
+            <td>fuchsia</td>
+            <td>#FF00FF</td>
+            <td><img src="../img/img-css/agua.png" alt="Color agua" width="20"></td>
+            <td>aqua</td>
+            <td>#00FFFF</td>
+          </tr>
+        </table>
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>
