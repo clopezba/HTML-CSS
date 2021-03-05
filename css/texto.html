@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="../estilos_css/css.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo-css" src="../img/img-css/logo-css.png" width=120 height=120 alt="Logo CSS3">
+      <h1 id="tit"> EL LENGUAJE CSS</h1>
+      <nav id="horiz"><ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li>HTML5
+          <ul><li><a href="../html-index.html">Introducción</a></li>
+          <li><a href="../html-index.html#hist">Historia</a></li>
+          <li><a href="../formato.html">Formato HTML</a></li>
+          <li><a href="../agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="../semanticos.html">Elementos semánticos</a></li>
+          <li><a href="../encajado.html">Contenido encajado</a></li>
+          <li><a href="../tabulado.html">Contenido tabulado</a></li>
+          <li><a href="../modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li>CSS
+          <ul><li><a href="css-index.html">Introducción</a></li>
+          <li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="estr-form.html">Estructura vs. formato</a></li>
+          <li><a href="sintaxis.html">Sintaxis CSS</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="fuentes.html">Fuentes</a></li>
+          <li><a href="texto.html">Texto</a></li>
+          <li><a href="mod-caja.html">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="#">Recursos Web</a></li>
+    </ul></nav>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="#texto">Texto</a></li>
+        <li><a href="#cadenas">Cadenas</a></li>
+        <li><a href="#listas">Listas</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Texto, cadenas y listas</h1>
+      <section>
+        <h2 id="texto">Texto</h2>
+        <p>En CSS podemos definir cómo realizar la manipulación de elementos de texto como los saltos de línea, la justificación, la alineación, la gestión de espacios en
+          blanco y las transformaciones de texto.</p>
+        <h3>text-indent</h3>
+        <p>Sangrado, sangría o indentación. Sólo afecta a la primera línea del párrafo.</p>
+        <p>Los valores se indican con procentajes o medidas.</p>
+        <h3>text-align</h3>
+        <p>Establece la alineación del contenido de un elemento de bloque.</p>
+        <ul>
+          <li>left</li>
+          <li>right</li>
+          <li>center</li>
+          <li>justify</li>
+        </ul>
+        <h3>text-transform</h3>
+        <p>Transforma el texto de un elemento para mostrarlo en mayúsculas, minúsculas o una mezcla de ambas.</p>
+        <ul>
+          <li>capitalize &rarr; Primera letra de cada palabra en mayúscula.</li>
+          <li>uppercase</li>
+          <li>lowercase</li>
+          <li>none &rarr; Muestra el texto tal y como está escrito.</li>
+        </ul>
+        <h3>text-decoration</h3>
+        <p>Establece la decoración que se añade al texto de un elemento. Se puede utilizar varias decoraciones diferentes en el mismo elemento.</p>
+        <ul>
+          <li>none</li>
+          <li>underline</li>
+          <li>overline</li>
+          <li>line-through</li>
+          <li>blink</li>
+        </ul>
+        <h3>Modificación de espacio</h3>
+        <ul>
+          <li>letter-spacing &rarr; Define la separación entre los caracteres de texto.</li>
+          <li>word-spacing &rarr; Define la separación entre las palabras del texto. El espacio suele ser 1em.</li>
+        </ul>
+        <h3>vertical-align</h3>
+        <p>La propiedad <i>vertical-align</i> de CSS especifica el alineado vertical de un elemento en línea o una celda de una tabla.</p>
+        <ul>
+          <li>baseline</li>
+          <li>middle</li>
+          <li>sub &rarr; Subíndice</li>
+          <li>super &rarr; Superíndice</li>
+          <li>text-top</li>
+          <li>text-bottom</li>
+          <li>top</li>
+          <li>bottom</li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="cadenas">Cadenas</h2>
+        <p>Podemos poner en CSS cadenas de texto con comillas:</p>
+        <ul>
+          <li>Dobles &rarr; &quot;Esto es una cadena&quot;</li>
+          <li>Simples &rarr; &#39;Esto es una cadena&#39;</li>
+          <li>Alternadas vs \<ul>
+            <li>&quot;Esto es una &#39;cadena&#39; &quot;</li>
+            <li>&#39;Esto es una &quot;cadena&quot; &#39;</li>
+            <li>&quot;Esto es una \&quot;cadena\&quot; &quot;</li>
+            <li>&#39;Esto es una \&#39;cadena\&#39; &#39;</li>
+          </ul></li>
+        </ul>
+        <p>Para poner un <b>salto de línea</b> debemos indicarlo poniendo &#39;\&#39;</p>
+        <p>Si queremos poner una <b>URI</b>, lo indicaremos así: <b>url(</b>Uniform Resource Identifier<b>)</b></p>
+      </section>
+      <section>
+        <h2 id="listas">Listas</h2>
+        <h3>list-style-type</h3>
+        <p>Establece el tipo de viñetas para la lista.</p>
+        <ul>
+          <li>Ordenadas &rarr; lower-roman, upper-roman, decimal, decimal-leading-zero, upper-alpha, lower-alpha, hebrew, armenian...</li>
+          <li>No ordenadas &rarr; disc, circle, square</li>
+        </ul>
+        <h3>list-style-image</h3>
+        <p>Te permite usar una imagen personalizada para la viñeta, en lugar de un simple cuadrado o círculo.</p>
+        <h3>list-style-position</h3>
+        <p>Establece si las viñetas aparecen dentro de los elementos de la lista o fuera de ellos, antes del inicio de cada elemento.</p>
+        <ul>
+          <li>outside</li>
+          <li>inside</li>
+        </ul>
+        <h3>list-style</h3>
+        <p>Es la propiedad resumen de <i>list</i>. Podemos indicar las tres propiedaades anteriores en una única indicándolas una tras otra.</p>
+        <p class="marco">ul {list-style: square url(example.png) inside;}</p>
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>

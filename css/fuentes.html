@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="../estilos_css/css.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo-css" src="../img/img-css/logo-css.png" width=120 height=120 alt="Logo CSS3">
+      <h1 id="tit"> EL LENGUAJE CSS</h1>
+      <nav id="horiz"><ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li>HTML5
+          <ul><li><a href="../html-index.html">Introducción</a></li>
+          <li><a href="../html-index.html#hist">Historia</a></li>
+          <li><a href="../formato.html">Formato HTML</a></li>
+          <li><a href="../agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="../semanticos.html">Elementos semánticos</a></li>
+          <li><a href="../encajado.html">Contenido encajado</a></li>
+          <li><a href="../tabulado.html">Contenido tabulado</a></li>
+          <li><a href="../modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li>CSS
+          <ul><li><a href="css-index.html">Introducción</a></li>
+          <li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="estr-form.html">Estructura vs. formato</a></li>
+          <li><a href="sintaxis.html">Sintaxis CSS</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="fuentes.html">Fuentes</a></li>
+          <li><a href="texto.html">Texto</a></li>
+          <li><a href="mod-caja.html">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="#">Recursos Web</a></li>
+    </ul></nav>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="#ffam">font-family</a></li>
+        <li><a href="#fstyle">font-style</a></li>
+        <li><a href="#fvar">font-variant</a></li>
+        <li><a href="#fweight">font-weight</a></li>
+        <li><a href="#fheight">font-height</a></li>
+        <li><a href="#fsize">font-size</a></li>
+        <li><a href="#font">font</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Fuentes</h1>
+      <p>Con el módulo de fuentes (<i>fonts</i>) de CSS se puede definir todo lo relacionado con los recursos tipográficos, sus propiedades y cómo son
+      cargados. Permite definir el estilo de una fuente, su familia tipográfica, tamaño o peso, y las variantes que puede tener la fuente.</p>
+      <h3 id="ffam">font-family</h3>
+      <p>La propiedad font-family define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado.
+        A diferencia de la mayoría de las propiedades CSS, los valores se separan con comas (&#39;,&#39;) para indicar que son valores alternativos.
+        Se indican por orden de prioridad, para que se adapte al sistema o navegador.</p>
+      <p>Puede indicarse con el nombre genérico o un nombre de familia, más específico.</p>
+      <ul>
+        <li>serif<ul>
+          <li>Times New Roman</li>
+          <li>Garamond</li>
+        </ul></li>
+        <li>sans-serif<ul>
+          <li>Arial</li>
+          <li>Verdana</li>
+          <li>Helvética</li>
+        </ul></li>
+        <li>monospace<ul>
+          <li>Courier</li>
+          <li>Courier New</li>
+        </ul></li>
+        <li>fantasy<ul>
+          <li>western</li>
+        </ul></li>
+      </ul>
+      <p class="marco">h2 {font-family: &quot;Times New Roman&quot;, serif;}</p>
+      <h3 id="fstyle">font-style</h3>
+      <p>Permite definir el aspecto de una familia tipográfica entre los valores:</p>
+      <ul>
+        <li>normal</li>
+        <li>italic &rarr; Utiliza la versión cursiva del tipo de letra.</li>
+        <li>oblique &rarr; Tiene una representación parecida a la itálica.</li>
+      </ul>
+      <p>*No todas las fuentes tienen todos los estilos, algunos no tiene <i>italic</i> u <i>oblique</i>.</p>
+      <h3 id="fvar">font-variant</h3>
+      <ul>
+        <li>normal</li>
+        <li>small-caps &rarr; Letra de imprenta (todas en mayúsculas, pero la primera letra más grande que las demás).</li>
+      </ul>
+      <h3 id="fweight">font-weight</h3>
+      <p>Especifica el grosor de la letra. Algunos tipos de letra sólo están disponibles en normal y bold. En este caso, un valor de 500 o menos serían normal
+      y 600 hacia arriba en negrita.</p>
+      <ul>
+        <li>bolder, lighter &rarr; Aumentan y reducen, respectivamente, en 100 el grosor con respecto al contenedor.</li>
+        <li>100 - 900 &rarr; Pesos numéricos para los tipos de fuente que nos permiten más flexibilidad que normal - bold.</li>
+        <li>normal &rarr; 400</li>
+        <li>bold &rarr; 700</li>
+      </ul>
+      <h3 id="fheight">line-height</h3>
+      <p>Establece la distancia entra las líneas de texto (interlineado).</p>
+      <ul>
+        <li>normal</li>
+        <li>número, porcentaje o medida (ej. px o em)</li>
+      </ul>
+      <h3 id="fsize">font-size</h3>
+      <p>Especifica la dimensión de la letra.</p>
+      <ul>
+        <li>Absoluto &rarr; xx-small, x-small, small. medium, large, x-large, xx-large</li>
+        <li>Relativo (al contenedor) &rarr; larger, smaller</li>
+        <li>Medida (lo más común es trabajar con <b>em</b>)</li>
+      </ul>
+      <h3 id="font">font</h3>
+      <p>Se trata de una <b>propiedad resumen</b> que agrupa varias propiedades en una.</p>
+      <p class="marco">font: [font-style] [font-variant] [font-weight] <b>font-size</b>[/line-height] <b>font-family</b></p>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>
