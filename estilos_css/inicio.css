@@ -22,14 +22,16 @@ body {
   display: inline;
   padding: 20px;
   background-color:lightgray;
+  font-family: Impact, Charcoal, sans-serif;
 }
 #horiz{display:relative;
         width: 100%;
         margin-top: 5%;
-        margin-left:170px;}
+        margin-left:170px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;}
 #horiz a{text-decoration:none;
           color:inherit;
-          font-size:18px;}
+          font-size:1em;}
 #horiz li{display:inline-block;
           width: 16vw;
           height:30px;
@@ -66,34 +68,14 @@ article {
   width:70%;
   padding: 60px;
   background-color: lightgray;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 .toc{list-style:decimal;
       line-height: 1.5em;}
-.toc a{text-decoration: none;
+a{text-decoration: none;
         color: black;}
 .nivel2{list-style:circle;}
 
-/*.marco{border-width: thick;
-        border-style: double;
-        border-color: #99657f;
-        padding: 10px;
-        padding-left: 20px;
-        background-color: #85dee7;
-        color: #73264D;
-        text-align: left;
-        display: inline-block;}
-
-h2 {
-  text-align: center;
-}
-th, td{background-color: #85dee7;
-      color: #73264D;
-      text-align: center;
-      padding: 10px;
-      border-width:thin;
-      border-style: solid;
-      border-color: #99657f}
-aside{text-align: center;}*/
 footer{text-align: center;
         background-color: black;
         position: static;

@@ -26,14 +26,16 @@ body {
   display: inline;
   padding: 20px;
   background-color:#C68EAA;
+  font-family: Impact, Charcoal, sans-serif;
 }
 #horiz{display:relative;
         width: 100%;
         margin-top: 5%;
-        margin-left:170px;}
+        margin-left:170px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;}
 #horiz a{text-decoration:none;
           color:inherit;
-          font-size:18px;}
+          font-size:1em;}
 #horiz li{display:inline-block;
           width: 16vw;
           height:30px;
@@ -86,9 +88,11 @@ article {
   position: inherit;
   margin-left: 210px;
   text-align: left;
+  font-size: 1em;
   width:70%;
   padding: 60px;
   background-color: #C68EAA;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 
 .marco{border-width: thick;
@@ -107,11 +111,10 @@ h2 {
 table {background-color: #85dee7;
       color: #73264D;
       text-align: center;
-      border-width:thin;
-      border-style: solid;
-      border-color: #99657f;
       border-collapse:collapse;}
-td, th{padding: 10px;}
+td, th{padding: 10px;
+        border: 1px solid;
+        border-collapse: collapse;}
 
 aside{text-align: center;}
 
@@ -121,7 +124,7 @@ dt {font-weight: bold;
 /*Propiedades tabla border-style*/
 #bstyle{border-collapse: separate;
         border-spacing: 10px;}
-
+#bstyle td {border-width: medium;}
 #snone{border-style: none;}
 #sdot{border-style: dotted;}
 #sdash{border-style:dashed;}

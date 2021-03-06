@@ -21,16 +21,18 @@ body {margin-bottom: 25px;
       font-size: 4vw;
       display: inline;
       padding: 20px;
-      background-color:#85dee7;}
+      background-color:#85dee7;
+      font-family: Impact, Charcoal, sans-serif;}
 
 /*Barra navegación horizontal, menú general*/
 #horiz{display:relative;
         width: 100%;
         margin-top: 5%;
-        margin-left:170px;}
+        margin-left:170px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;}
 #horiz a{text-decoration:none;
           color:inherit;
-          font-size:18px;}
+          font-size:1em;}
 #horiz li{display:inline-block;
           width: 16vw;
           height:30px;
@@ -81,7 +83,8 @@ article {position: inherit;
         width: 70%;
         text-align: left;
         padding: 60px;
-        background-color: #85dee7;}
+        background-color: #85dee7;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;}
 
 .marco{border-width: thick;
         border-style: double;
@@ -123,7 +126,11 @@ table{background-color: #EBD7E1;
 th, caption{padding: 10px 20px;
             border:none;}
 
-td{padding: 5px 20px;}
+td{padding: 5px 20px;
+    border: 1px solid;}
+
+.sub{vertical-align: sub;
+      font-size: 0.75em;}
 
 footer{text-align: center;
         background-color: black;
