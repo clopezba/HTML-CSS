@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cristina">
+    <title>HTML5 y CSS - Cristina López</title>
+    <link rel="stylesheet" href="../estilos_css/css.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <img class="logo-css" src="../img/img-css/logo-css.png" width=120 height=120 alt="Logo CSS3">
+      <h1 id="tit"> EL LENGUAJE CSS</h1>
+      <nav id="horiz"><ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li>HTML5
+          <ul><li><a href="../html-index.html">Introducción</a></li>
+          <li><a href="../html-index.html#hist">Historia</a></li>
+          <li><a href="../formato.html">Formato HTML</a></li>
+          <li><a href="../agrupacion.html">Elementos agrupación</a></li>
+          <li><a href="../semanticos.html">Elementos semánticos</a></li>
+          <li><a href="../encajado.html">Contenido encajado</a></li>
+          <li><a href="../tabulado.html">Contenido tabulado</a></li>
+          <li><a href="../modelos-contenido.html">Modelos de contenido</a></li></ul>
+        </li>
+        <li>CSS
+          <ul><li><a href="css-index.html">Introducción</a></li>
+          <li><a href="css-index.html#histcss">Historia</a></li>
+          <li><a href="estr-form.html">Estructura vs. formato</a></li>
+          <li><a href="sintaxis.html">Sintaxis CSS</a></li>
+          <li><a href="color.html">Color</a></li>
+          <li><a href="fuentes.html">Fuentes</a></li>
+          <li><a href="texto.html">Texto</a></li>
+          <li><a href="mod-caja.html">Modelo caja</a></li></ul>
+          </li>
+        <li><a href="../webs.html">Recursos Web</a></li>
+    </ul></nav>
+    </header>
+    <nav id="indice">
+      <ul>
+        <li><a href="#caja">Partes caja</a></li>
+        <li><a href="#propcaja">Propiedades</a></li>
+        <li><a href="#fondo">Fondo objeto</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>Modelo de caja</h1>
+      <p>El modelo define cómo funcionan juntas las diferentes partes de una caja (margen, borde, relleno y contenido) para crear una caja que puedas
+        ver en tu página.</p>
+      <section>
+        <h2 id="caja">Partes de una caja</h2>
+        <img class="marco" src="../img/img-css/mod-caja.png" alt="Esquema del modelo de caja de CSS" width="500">
+        <dl>
+          <dt>Contenido de la caja (o <i>content box</i>)</dt>
+          <dd>El área donde se muestra el contenido, cuyo tamaño puede cambiarse utilizando propiedades como width y height.</dd>
+          <dt>Relleno de la caja (o <i>padding box</i>)</dt>
+          <dd> El relleno es espacio en blanco alrededor del contenido; es posible controlar su tamaño usando la propiedad padding y otras propiedades
+            relacionadas.</dd>
+          <dt>Borde de la caja (o <i>border box</i>)</dt>
+          <dd>El borde de la caja envuelve el contenido y el relleno. Es posible controlar su tamaño y estilo utilizando la propiedad border y otras
+            propiedades relacionadas.</dd>
+          <dt>Margen de la caja (o <i>margin box</i>)</dt>
+          <dd>El margen es la capa más externa. Envuelve el contenido, el relleno y el borde como espacio en blanco entre la caja y otros elementos.
+            Es posible controlar su tamaño usando la propiedad margin y otras propiedades relacionadas.</dd>
+        </dl>
+      </section>
+      <section>
+        <h2 id="propcaja">Propiedades de las partes de una caja</h2>
+        <h3>margin y padding</h3>
+        <p>Podemos establecer el tamaño del margen y del relleno de forma similar a través de CSS. La única diferencia es que <i>margin</i> admite
+        valores negativos y <i>padding</i> no.</p>
+        <p>Se puede indicar su tamaño para las cuatro partes del elemento de forma individual (en sentido de las agujas del reloj):</p>
+        <ul>
+          <li>margin-top / padding-top</li>
+          <li>margin-right / padding-right</li>
+          <li>margin-bottom / padding-bottom</li>
+          <li>margin-left / padding-left</li>
+        </ul>
+        <p>Pero también podemos indicarlo de forma simplificada:</p>
+        <ul>
+          <li>top right bottom left &rarr; <span class="marco">elem {margin: 2em 1em 1.5em 2.5em}</span></li>
+          <li>top&bottom right&left &rarr; <span class="marco">elem {margin: 2em 1em}</span></li>
+          <li>top right&left bottom &rarr; <span class="marco">elem {margin 2em 1em 2.5em}</span></li>
+        </ul>
+        <h3>border</h3>
+        <p>Hay diferentes propiedades que se pueden definir para un borde, entre ellas están: el estilo, el ancho y el color. De igual manera que en el caso
+          del margen y relleno, podemos establecer las propiedades de tres formas diferentes:</p>
+        <ul>
+          <li>De forma <b>conjunta</b> a todos los bordes &rarr; border[-xxxx] <span class="marco">h1{border-width: 10px;}</span></li>
+          <li>De forma <b>individual</b> para cada <b>borde y propiedad</b> &rarr; border-top-xxxx, border-right-xxxx, border-bottom-xxxx, border-left-xxxx
+          <span class="marco">h2{border-top-color: blue;}</span></li>
+          <li>De forma <b>simplificada</b> para cada borde y <b>varias propiedades</b> & rarr; border-top, border-right, border-bottom, border-left
+          <span class="marco">h3{border-right: thick solid red;}</span></li>
+        </ul>
+        <h4>border-width</h4>
+        <ul>
+          <li>valor</li>
+          <li>thin</li>
+          <li>medium</li>
+          <li>thick</li>
+        </ul>
+        <h4>border-style</h4>
+        <table id="bstyle">
+          <tr>
+            <td id="snone">none</td>
+            <td id="sdot">dotted</td>
+            <td id="sdash">dashed</td>
+            <td id="ssolid">solid</td>
+            <td id="sdoub">double</td>
+            <td id="sgro">groove</td>
+            <td id="srid">ridge</td>
+            <td id="sinset">inset</td>
+            <td id="sout">outset</td>
+            <td id="shid">hidden</td>
+          </tr>
+        </table>
+        <h4>border-color</h4>
+        <p>Se indica como cualquier propiedad de color de otros elementos (ver <a id="link" href="color.html">color</a>).</p>
+      </section>
+      <section>
+        <h2 id="fondo">Fondo de objeto</h2>
+        <p>Podemos definir las diferentes propiedades del fondo de un elemento con <b><i>background</i></b>.</p>
+        <ul>
+          <li>background-color &rarr; Permite definir un color para el fondo.</li>
+          <li>background-image &rarr; Permite poner una imagen referida con una URL en el fondo del elemento.</li>
+          <li>background-repeat &rarr; Controla la forma en que se repiten las imágenes de fondo.<ul>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+            <li>no-repeat</li>
+            <li>none</li>
+          </ul></li>
+          <li>background-attachment &rarr; Indica la forma en la que se visualiza la imagen de fondo: permanece fija
+            cuando se hace <i>scroll</i> en la ventana del navegador o se desplaza junto con la ventana:<ul>
+              <li>scroll</li>
+              <li>fixed</li>
+            </ul></li>
+          <li>background-position &rarr; Define la posición en la que se muestra la imagen en el fondo del elemento. <ul>
+            <li>porcentaje</li>
+            <li>medida</li>
+            <li>clave &rarr; top (0%), left(0%), center(50%), bottom (100%), right(100%)</li>
+            <p>Posibilidades para indicar la posición del fondo:</p>
+            <li>horizontal vertical &rarr; 20% 50%</li>
+            <li>clave [clave] &rarr; top right</li>
+            <li>horizontal &rarr; 50%</li>
+          </ul></li>
+        </ul>
+
+      </section>
+    </article>
+    <footer><address><small><b>Cristina López Bachiller</b> - Lenguaje de marcas - 1º DAM - I.E.S. Sierra de Guara (Huesca) - 2021</small></address></footer>
+  </body>
+</html>

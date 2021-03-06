@@ -13,6 +13,7 @@ body {
 
 .logo-css{
   margin-left:20%;
+  margin-top: 25px;
   position:relative;
 
 }
@@ -111,7 +112,29 @@ table {background-color: #85dee7;
       border-color: #99657f;
       border-collapse:collapse;}
 td, th{padding: 10px;}
+
 aside{text-align: center;}
+
+dt {font-weight: bold;
+    line-height: 2.5em;}
+
+/*Propiedades tabla border-style*/
+#bstyle{border-collapse: separate;
+        border-spacing: 10px;}
+
+#snone{border-style: none;}
+#sdot{border-style: dotted;}
+#sdash{border-style:dashed;}
+#ssolid{border-style: solid;}
+#sdoub{border-style: double;}
+#sgro{border-style: groove;;}
+#srid{border-style: ridge;;}
+#sinset{border-style:inset;;}
+#sout{border-style: outset;}
+#shid{border-style: hidden;}
+
+#link{color: black;}
+
 footer{text-align: center;
         background-color: black;
         position: static;
