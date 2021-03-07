@@ -51,23 +51,23 @@
         <li>El primer elemento de HTML es <i>head</i>, es opcional pero recomendado ponerlo. Incluye los <b>metadatos</b>, información sobre el documento.</li>
         <li><i>Body</i> es el <b>cuerpo del documento</b>. Todo el contenido que se mostrará se incluye aquí.</li>
       </ul>
-      <p>El formato de etiqueta en HTML es el mismo que en XML: <b>&lsaquo;elemento&rsaquo;.</b><br>
-      De la misma forma que la etiqueta de cierre es <b>&lsaquo;/elemento&rsaquo;.</b><br>
+      <p>El formato de etiqueta en HTML es el mismo que en XML: <b>&lt;elemento&gt;.</b><br>
+      De la misma forma que la etiqueta de cierre es <b>&lt;/elemento&gt;.</b><br>
       Pero sí hay una diferencia con respecto a XML ya que los elementos vacíos <strong>no llevan etiqueta de cierre.</strong></p>
       <p>En el caso de los atributos, también se indican igual que en lenguaje XML, pero en este caso no es necesario poner las comillas (" "). <wbr>Sí es interesante ponerlas cuando haya
       espacios en blanco o caracteres raros.</p>
-      <aside><hr><small>El atributo "lang" no es obligatorio, pero sí recomendado. Indica el idioma del texto del documento. Este atributo no necesariamente se debe poner en la etiqueta <b>&lsaquo;html&rsaquo;</b>, sino que se puede poner en
+      <aside><hr><small>El atributo "lang" no es obligatorio, pero sí recomendado. Indica el idioma del texto del documento. Este atributo no necesariamente se debe poner en la etiqueta <b>&lt;html&gt;</b>, sino que se puede poner en
       cualquier otro elemento (ej. poner una cita en otro idioma).</small><hr></aside><br>
       <section>
         <h2 id="head">Head</h2>
         <p>En la figura de la derecha se puede ver un ejemplo básico de <i>encabezado</i>.</p>
         <h3>Título</h3>
         <img class="formt" src="img/head.png" alt="Encabezado o 'head' de HTML" width="350" height="225">
-        <p>El elemento <b>&lsaquo;title&rsaquo;</b> representa el título principal de todo el documento HTML. Éste se mostrará en el nombre de la ventana/pestaña del navegador o cuando se guarde como favorito o en marcadores.<br>
-        Es un metadato, por lo que no se mostrará en el contenido de la página, y se debe incluir dentro de <b>&lsaquo;head&rsaquo;.</b></p><br>
+        <p>El elemento <b>&lt;title&gt;</b> representa el título principal de todo el documento HTML. Éste se mostrará en el nombre de la ventana/pestaña del navegador o cuando se guarde como favorito o en marcadores.<br>
+        Es un metadato, por lo que no se mostrará en el contenido de la página, y se debe incluir dentro de <b>&lt;head&gt;.</b></p><br>
         <h3>Metadatos</h3>
-        <p>Los metadatos son los datos sobre el documento que no se muestran. Se indican con el elemento <b>&lsaquo;meta&rsaquo;</b> y existen muchos tipos distintos.<br>
-        Los principales usos del elemento <b>&lsaquo;meta&rsaquo;</b> son <i>charset</i> y <i>name</i>.</p>
+        <p>Los metadatos son los datos sobre el documento que no se muestran. Se indican con el elemento <b>&lt;meta&gt;</b> y existen muchos tipos distintos.<br>
+        Los principales usos del elemento <b>&lt;meta&gt;</b> son <i>charset</i> y <i>name</i>.</p>
         <dl>
           <dt>Charset</dt><dd>Especifica la codificación de caracteres del documento. La más habitual es <b>utf-8</b>, que es un conjunto de caracteres universal que incluye casi todos los caracteres de casi cualquier idioma humano.</dd>
           <dt>Name</dt><dd>Sirve para definir otras datos del documento, como el autor o una descipción de la página. Para ello daremos un nombre ("name") y un valor ("content").
@@ -80,20 +80,20 @@
         <img class="formt" src="img/body.png" alt="Esquema de elementos de cuerpo" weight="250" height="400">
         <dl>
           <dt>Títulos</dt><dd>Llamados en inglés <i>heading</i>, son los títulos del interior del documento. Pueden incluirse en las diferentes secciones, artículos o encabezados.<br>
-          Hay hasta seis niveles de títulos que se indican con las etiquetas <b>&lsaquo;h1&rsaquo;</b> hasta <b>&lsaquo;h6&rsaquo;.</b></dd><br>
+          Hay hasta seis niveles de títulos que se indican con las etiquetas <b>&lt;h1&gt;</b> hasta <b>&lt;h6&gt;.</b></dd><br>
           <dt>Artículo</dt><dd>Es un contenedor de bloques de contenido que se consideran independientes del sitio web pueden ser vistos, reutilizados y distribuidos pòr separado. Es habitual encontrar este elemento encerrando artículos,
-            entradas de blogs o mensajes en un foro.<br>Este elemento se indica con la etiqueta <b>&lsaquo;article&rsaquo;.</b></dd><br>
-          <dt>Sección</dt><dd>El elemento <b>&lsaquo;section&rsaquo;</b> es un elemento de seccionamiento genérico, diseñado para contener una parte de un documento temáticamente definida. Suele utilizarse para dividir un documento extenso
+            entradas de blogs o mensajes en un foro.<br>Este elemento se indica con la etiqueta <b>&lt;article&gt;.</b></dd><br>
+          <dt>Sección</dt><dd>El elemento <b>&lt;section&gt;</b> es un elemento de seccionamiento genérico, diseñado para contener una parte de un documento temáticamente definida. Suele utilizarse para dividir un documento extenso
           en capítulos, separar las diferentes pestañas en una aplicación o dividir temáticamente las secciones de un documento.</dd><br>
-          <dt>Navegación</dt><dd>Se trata de los menús de navegación dentro de un documento HTML. Se indica con el elemento <b>&lsaquo;nav&rsaquo;</b>, y puede incluirse en el encabezado (<i>header</i>), el pie de página (<i>footer</i>) o fuera de estas secciones.</dd><br>
-          <dt>Inciso</dt><dd>Se utiliza la etiqueta <b>&lsaquo;aside&rsaquo;</b> y sirve para dar información complementaria. El contenido del elemento debe estar relacionado con el contenido circundante, pero no ser completamente necesario para su comprensión.<br>
+          <dt>Navegación</dt><dd>Se trata de los menús de navegación dentro de un documento HTML. Se indica con el elemento <b>&lt;nav&gt;</b>, y puede incluirse en el encabezado (<i>header</i>), el pie de página (<i>footer</i>) o fuera de estas secciones.</dd><br>
+          <dt>Inciso</dt><dd>Se utiliza la etiqueta <b>&lt;aside&gt;</b> y sirve para dar información complementaria. El contenido del elemento debe estar relacionado con el contenido circundante, pero no ser completamente necesario para su comprensión.<br>
           Es habitual que se sitúe en un lateral del documento HTML.</dd><br>
           <dt>Encabezado</dt><dd>Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda o un nombre de autor, entre otros.<br>
-          Este elemento se indica con la etiqueta <b>&lsaquo;header&rsaquo;</b>.</dd><br>
-          <dt>Pie de página</dt><dd>El elemento <b>&lsaquo;footer&rsaquo;</b> representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección. Normalmente contiene información acerca del autor de la seción, datos de derechos
+          Este elemento se indica con la etiqueta <b>&lt;header&gt;</b>.</dd><br>
+          <dt>Pie de página</dt><dd>El elemento <b>&lt;footer&gt;</b> representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección. Normalmente contiene información acerca del autor de la seción, datos de derechos
           de autor o enlaces a documentos relacionados.</dd><br>
-          <dt>Dirección</dt><dd>La dirección, que utiliza la etiqueta <b>&lsaquo;address&rsaquo;</b>, representa la información de contacto del cuerpo o artículo más cercano. Si se encuentra en el cuerpo, la información de contacto se aplica a todo el documento.<br>
-          Habitualmente un elemento <b>&lsaquo;address&rsaquo;</b> peude ser colocado dentro del elemento <b>&lsaquo;footer&rsaquo;</b> de la sección actual, si lo hay.</dd><br>
+          <dt>Dirección</dt><dd>La dirección, que utiliza la etiqueta <b>&lt;address&gt;</b>, representa la información de contacto del cuerpo o artículo más cercano. Si se encuentra en el cuerpo, la información de contacto se aplica a todo el documento.<br>
+          Habitualmente un elemento <b>&lt;address&gt;</b> peude ser colocado dentro del elemento <b>&lt;footer&gt;</b> de la sección actual, si lo hay.</dd><br>
         </dl>
       </section>
     </article>

@@ -50,29 +50,29 @@
         <h2 id=agrup>Agrupaciones</h2>
         <p>Las siguientes etiquetas se utilizan para agrupar información:</p>
         <h3>Párrafo (<i>paragraph</i>)</h3>
-        <p>Se indica con la etiqueta <b>&lsaquo;p&rsaquo;</b>. Define un párrafo de texto.<br>El elemento <b>p</b> no debería utilizarse si otro elemento más específico es más apropiado.</p>
-        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Este texto pertenece a un párrafo<b>&lsaquo;/p&rsaquo;</b><br>
-          <b>&lsaquo;p&rsaquo;</b>Éste es el párrafo siguiente<b>&lsaquo;/p&rsaquo;</b></p>
+        <p>Se indica con la etiqueta <b>&lt;p&gt;</b>. Define un párrafo de texto.<br>El elemento <b>p</b> no debería utilizarse si otro elemento más específico es más apropiado.</p>
+        <p class="marco"><b>&lt;p&gt;</b>Este texto pertenece a un párrafo<b>&lt;/p&gt;</b><br>
+          <b>&lt;p&gt;</b>Éste es el párrafo siguiente<b>&lt;/p&gt;</b></p>
         <p class="marco">Este texto pertenece a un párrafo<br>Éste es el párrafo siguiente</p>
         <h3>Texto preformateado (<i>preformatted</i>)</h3>
-        <p>El elemento <b>&lsaquo;pre&rsaquo;</b> representa un bloque de texto preformateado. El texto en este elemento típicamente se muestra en una fuente fija, no proporcional, exactamente como es mostrado en el archivo.
+        <p>El elemento <b>&lt;pre&gt;</b> representa un bloque de texto preformateado. El texto en este elemento típicamente se muestra en una fuente fija, no proporcional, exactamente como es mostrado en el archivo.
           Los "blancos" dentro de este elemento también son mostrados como están escritos, repetando los espacios y los saltos de línea. Se podría utilizar, por ejemplo, para escribir un poema con una métrica definida.</p>
-          <pre class="marco"><b>&lsaquo;pre&rsaquo;</b>¿Qué es poesía?, dices mientras clavas
+          <pre class="marco"><b>&lt;pre&gt;</b>¿Qué es poesía?, dices mientras clavas
           en mi pupila tu pupila azul.
         ¿Qué es poesía?¿Y tú me lo preguntas?
           Poesía... eres tú.
-                            -<i>Gustavo Adolfo Bécquer</i><b>&lsaquo;/pre&rsaquo;</b></pre>
+                            -<i>Gustavo Adolfo Bécquer</i><b>&lt;/pre&gt;</b></pre>
         <pre class="marco">¿Qué es poesía?, dices mientras clavas
       en mi pupila tu pupila azul.
     ¿Qué es poesía?¿Y tú me lo preguntas?
         Poesía... eres tú.
                           -<i>Gustavo Adolfo Bécquer</i></pre>
         <h3>Línea horizontal (<i>horizontal rule</i>)</h3>
-        <p>El elemento <b>&lsaquo;hr&rsaquo;</b> representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema dentro de una sección, etc.). <br>
+        <p>El elemento <b>&lt;hr&gt;</b> representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema dentro de una sección, etc.). <br>
         Entre secciones no sería necesario porque ya lo indican los títulos.<br>*Este elemento no lleva etiqueta de cierre.</p>
-        <p class="marco"><b>&lsaquo;p&rsaquo;</b>Éste es el primer párrafo.<b>&lsaquo;/p&rsaquo;</b><br>
-        <b>&lsaquo;hr&rsaquo;</b><br>
-        <b>&lsaquo;p&rsaquo;</b>Éste es el segundo párrafo, separado del primero  por una línea horizontal. </p>
+        <p class="marco"><b>&lt;p&gt;</b>Éste es el primer párrafo.<b>&lt;/p&gt;</b><br>
+        <b>&lt;hr&gt;</b><br>
+        <b>&lt;p&gt;</b>Éste es el segundo párrafo, separado del primero  por una línea horizontal. </p>
         <pre class="marco">Éste es el primer párrafo.<hr>Éste es el segundo párrafo, separado del primero <br>por una línea horizontal.</pre>
       </section>
       <section>
@@ -80,7 +80,7 @@
         <p>En HTML se pueden crear listas de información de una forma sencilla. Encontramos dos posibilidades: listas ordenadas y listas desordendas.</p>
         <h3>Listas desordenadas (<i>unordered list</i>)</h3>
         <p>Define una lista de items, en el que su orden no es importante, es decir, si cambiamos el orden no cambiará el sentido del documento. Se trata de una etiqueta contenedora
-          que se indica con la etiqueta <b>&lsaquo;ul&rsaquo;</b>.<br></p>
+          que se indica con la etiqueta <b>&lt;ul&gt;</b>.<br></p>
         <img class="marco" src="img/lista-ul.png" width="140" alt="Ejemplo de sintaxis de HTML para listas desordenadas">
         <ul class="marco">
           <li>Esto</li>
@@ -88,18 +88,18 @@
           <li>Lo de más allá</li>
         </ul>
         <h3>Listas ordenadas (<i>ordered list</i>)</h3>
-        <p>El elemento <b>&lsaquo;ol&rsaquo;</b> permite definir listas o niñetas ordenadas, bien con numeración o alfabéticamente.<br></p>
-        <h4>Argumentos de <b>&lsaquo;ol&rsaquo;</b></h4>
+        <p>El elemento <b>&lt;ol&gt;</b> permite definir listas o niñetas ordenadas, bien con numeración o alfabéticamente.<br></p>
+        <h4>Argumentos de <b>&lt;ol&gt;</b></h4>
         <dl>
-          <dt>Reversed: &lsaquo;ol reversed&rsaquo;</dt><dd>Se utiliza para revertir en orden de los elementos. La enumeración será en orden descendente.</dd><br>
-          <dt>Start: &lsaquo;ol start="valor"&rsaquo;</dt><dd>Indica por qué valor empieza la lista. En el caso de ejemplo empezaría por 4:</dd><br>
+          <dt>Reversed: &lt;ol reversed&gt;</dt><dd>Se utiliza para revertir en orden de los elementos. La enumeración será en orden descendente.</dd><br>
+          <dt>Start: &lt;ol start="valor"&gt;</dt><dd>Indica por qué valor empieza la lista. En el caso de ejemplo empezaría por 4:</dd><br>
           <img class="marco" src="img/lista-ol-start.png" width="110" alt="Ejemplo de sintaxis de HTML para listas ordenadas">
           <ol class="marco" start="4">
             <li>Ejemplo</li>
             <li>Ejemplo</li>
             <li>Ejemplo</li>
           </ol>
-          <dt>Type: &lsaquo;ol type="tipo"&rsaquo;</dt><dd>Con este argumento podemos elegir el tipo de enumeración. Pudiendo ser una lista con números enteros, letras o números romanos (en minúsculas o mayúsculas): 1 / a / A / i / I</dd><br>
+          <dt>Type: &lt;ol type="tipo"&gt;</dt><dd>Con este argumento podemos elegir el tipo de enumeración. Pudiendo ser una lista con números enteros, letras o números romanos (en minúsculas o mayúsculas): 1 / a / A / i / I</dd><br>
           <img class="marco" src="img/lista-ol-type.png" width="100" alt="Ejemplo de sintaxis HTML para listas ordenadas con atributo de tipo">
             <ol class="marco" type="i">
               <li>Ejemplo</li>
@@ -108,11 +108,11 @@
             </ol>
         </dl>
         <h3>Elementos de lista (<i>list item</i>)</h3>
-        <p>El elemento <b>&lsaquo;li&rsaquo;</b> declara uno de los elementos de una lista. Se debe poner un <b>&lsaquo;li&rsaquo;</b> por cada elemento.<br>
+        <p>El elemento <b>&lt;li&gt;</b> declara uno de los elementos de una lista. Se debe poner un <b>&lt;li&gt;</b> por cada elemento.<br>
         Este elemento <b>li</b> admite, a su vez, dos atributos: tipo y valor.</p>
         <dl>
-          <dt>Tipo: &lsaquo;li type="tipo"&rsaquo;</dt><dd>Se puede definir el tipo de enumeración que tendrá un elemento de forma aislada. Los diferentes tipos son: disc / square / circle (si no queremos dar un orden); 1 / a / A / i / I (para marcar un orden).</dd><br>
-          <dt>Valor: &lsaquo;li value="valor"&rsaquo;</dt><dd>Se utiliza para dar un valor concreto a un elemento expecífico. Los elementos posteriores seguiran a partir de este nuevo valor.</dd><br>
+          <dt>Tipo: &lt;li type="tipo"&gt;</dt><dd>Se puede definir el tipo de enumeración que tendrá un elemento de forma aislada. Los diferentes tipos son: disc / square / circle (si no queremos dar un orden); 1 / a / A / i / I (para marcar un orden).</dd><br>
+          <dt>Valor: &lt;li value="valor"&gt;</dt><dd>Se utiliza para dar un valor concreto a un elemento expecífico. Los elementos posteriores seguiran a partir de este nuevo valor.</dd><br>
         </dl>
         <img class="marco" src="img/lista-li-value.png" width="170" alt="Ejemplo de sintaxis HTML para elementos de una lista con atributo valor">
         <ol class="marco">
@@ -123,12 +123,12 @@
       </section>
       <section>
         <h2 id=listdes>Listas de descripciones (<i>description list</i>)</h2>
-        <p>El elemento <b>&lsaquo;dl&rsaquo;</b> encierra una lista de grupos de términos y descripciones. Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos.<br><br>
-        En este tipo de listas no se utiliza el elemento <b>&lsaquo;li&rsaquo;</b>, sino que, al tratarse de asociaciones de pares 'término-descripción', utilizaremos los elementos que se muestras a continuación:</p>
+        <p>El elemento <b>&lt;dl&gt;</b> encierra una lista de grupos de términos y descripciones. Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos.<br><br>
+        En este tipo de listas no se utiliza el elemento <b>&lt;li&gt;</b>, sino que, al tratarse de asociaciones de pares 'término-descripción', utilizaremos los elementos que se muestras a continuación:</p>
         <h3>Término de la descripción (<i>description term</i>)</h3>
-        <p>Este elemento (<b>&lsaquo;dt&rsaquo;</b>) especifica un término en una descripción o lista de definiciones. Usualmente va seguido por un elemento <b>&lsaquo;dd&rsaquo;</b>; sin embargo, múltiples elementos <b>&lsaquo;dt&rsaquo;</b> en un renglón indican diferentes términos los cuales todos son definidos por el siguiente elemento <b>&lsaquo;dd&rsaquo;</b>.<br></p>
+        <p>Este elemento (<b>&lt;dt&gt;</b>) especifica un término en una descripción o lista de definiciones. Usualmente va seguido por un elemento <b>&lt;dd&gt;</b>; sin embargo, múltiples elementos <b>&lt;dt&gt;</b> en un renglón indican diferentes términos los cuales todos son definidos por el siguiente elemento <b>&lt;dd&gt;</b>.<br></p>
         <h3>Datos de la descripción (<i>description data</i>)</h3>
-        <p>El elemento <b>&lsaquo;dd&rsaquo;</b> provee la definición u otro texto relacionado que es asociado con el término precedente (<b>&lsaquo;dt&rsaquo;</b>).</p>
+        <p>El elemento <b>&lt;dd&gt;</b> provee la definición u otro texto relacionado que es asociado con el término precedente (<b>&lt;dt&gt;</b>).</p>
         <p>En una lista de descripciones, de forma predeterminada aparecen los datos de las descripción con sangrado a la izquierda.</p>
         <img class="marco" src="img/lista-dl.png" width="140" alt="Ejemplo de sintaxis de HTML para listas de descripciones">
         <dl class="marco">
@@ -140,11 +140,11 @@
       </section>
       <section>
         <h2 id=cont>Elementos contenedores</h2>
-        <h3>Elemento <b>&lsaquo;div&rsaquo;</b></h3>
+        <h3>Elemento <b>&lt;div&gt;</b></h3>
         <p>Se trata de un elemento sin significado que sirve para crear secciones o agrupar contenidos en bloque. </p>
-        <h3>Elemento <b>&lsaquo;span&rsaquo;</b></h3>
-        <p>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea ya que del mismo modo que <b>&lsaquo;div&rsaquo;</b>, no tiene significado por sí mismo.</p>
-        <h3>Diferencias entre <b>&lsaquo;div&rsaquo;</b> y <b>&lsaquo;span&rsaquo;</b></h3>
+        <h3>Elemento <b>&lt;span&gt;</b></h3>
+        <p>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea ya que del mismo modo que <b>&lt;div&gt;</b>, no tiene significado por sí mismo.</p>
+        <h3>Diferencias entre <b>&lt;div&gt;</b> y <b>&lt;span&gt;</b></h3>
         <table class="marco">
           <thead>
             <tr>
