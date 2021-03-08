@@ -45,15 +45,15 @@
     <article>
       <h1>Contenido encajado en HTML</h1>
       <p>Una vez visto cómo se introduce texto en HTML y las diferentes posibilidades de formateado que existen, veremos cómo se puede introduccir
-      contenido encajado, en concreto contenido multimedia, en una página web.</p>
+        contenido encajado, en concreto contenido multimedia, en una página web.</p>
       <section>
         <h2 id="imag">Imágenes</h2>
         <p>Para poner una imagen simple en un documento HTML se utiliza el elemento <b>&lt;img&gt;</b>. Se trata de un elemento vacío, por lo
-        que <b>no lleva etiqueta de cierre</b>.<br>Este elemento requiere que se espeficique el atributo <b>src</b> (<i>source</i>), que contiene la
-        ruta de la imagen. Esta ruta puede ser relativa o absoluta. Otros atributos posibles son:</p>
+          que <b>no lleva etiqueta de cierre</b>.<br>Este elemento requiere que se espeficique el atributo <b>src</b> (<i>source</i>), que contiene la
+          ruta de la imagen. Esta ruta puede ser relativa o absoluta. Otros atributos posibles son:</p>
         <dl>
           <dt>Texto alternativo (alt)</dt><dd>Descripción textual de la imagen para usarla en situaciones en que no puede ser vista/mostrada.
-          No es obligado ponerlo, pero sí <b>muy recomendado</b>.</dd><br>
+            No es obligado ponerlo, pero sí <b>muy recomendado</b>.</dd><br>
           <dt>Width (ancho)</dt><dd>Se utiliza para indicar el ancho que tendrá la imagen.</dd><br>
           <dt>Height (alto)</dt><dd>Se utiliza para indicar el alto de la imagen.</dd>
         </dl>
@@ -71,14 +71,14 @@
       <section>
         <h2 id="mapima">Mapas de imagen</h2>
         <p>Cuando anidas una imagen en un elemento <b>&lt;a&gt;</b>, la imagen entera enlaza a un documento HTML. Un mapa de imagen, por otro lado,
-        contiene varias regiones que enlazan cada una a direcciones distintas.</p>
+          contiene varias regiones que enlazan cada una a direcciones distintas.</p>
         <p>Para añadir un mapa de imagen, se debe insertar ésta de la forma habitual, pero habrá que añadir el atributo <b>usemap</b> donde pondremos el
-        identificador del mapa (#nombre_mapa).</p>
+          identificador del mapa (#nombre_mapa).</p>
         <p>Será necesario crear un mapa, para ello utilizaremos el elemento <b>&lt;map&gt;</b> con un atributo <b>name</b> que indique el nombre
-        del mapa.</p>
+          del mapa.</p>
         <img class="marco" src="img/mapa-imagen.png" width="400" alt="Ejemplo de sintaxis de HTML de un mapa de imagen">
         <p>Dentro del elemento <b>&lt;map&gt;</b>, se definen las diferentes regiones o zonas con el elemento vacío <b>&lt;area&gt;</b>, que tiene los
-        siguientes atributos:</p>
+          siguientes atributos:</p>
         <ul type="eclipse">
           <li><b>Shape</b> &rarr; default, rect, circle, poly.</li>
           <li><b>Coords</b> &rarr; coordenadas separadas por comas. <small>Ver en el apartado siguiente</small></li>
@@ -99,7 +99,7 @@
       <section>
         <h2 id="simb">Símbolos especiales</h2>
         <p>HTML fue creado para el alfabeto inglés por lo que posteriormente se tuvo que buscar un sistema para mostrar los denominados 'caracteres especiales'
-        que no forman parte de dicho alfabeto. Para ello se utilizan determinadas cadenas de texto que el navegador entiende. </p>
+          que no forman parte de dicho alfabeto. Para ello se utilizan determinadas cadenas de texto que el navegador entiende. </p>
         <p>El formato que se sigue es: <b>&amp;nombre_simbolo;</b>. Algunos ejemplos son:</p>
         <dl>
           <dt>Espacio en blanco:</dt><dd>Non-breaking Space &rarr; &amp;nbsp;</dd>

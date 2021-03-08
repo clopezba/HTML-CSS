@@ -1,55 +1,60 @@
+/*Propiedades body*/
 body {margin-bottom: 25px;
-      width: 90%;
       padding-left: 50px;
       padding-top: 50px;
       padding-right: 50px;
+      width: 90%;
       background-color:#85dee7;
       background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%),
-      radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
+        radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.3) 99%);
       background-size:80px 80px;
       background-position:0 0, 40px 40px;}
 
-.logo{margin-left:20%;
-      margin-top: 25px;
-      position:relative;
-      }
+/*Propiedades header*/
+.logo {position:relative;
+      margin-left:20%;
+      margin-top: 25px;}
 
-#tit{position:absolute;
-      margin-bottom: 10px;
-      width: 50%;
-      text-align: center;
-      font-size: 4vw;
+#tit {position:absolute;
       display: inline;
+      margin-bottom: 10px;
       padding: 20px;
+      width: 50%;
       background-color:#85dee7;
-      font-family: Impact, Charcoal, sans-serif;}
+      font-size: 4vw;
+      font-family: Impact, Charcoal, sans-serif;
+      text-align: center;}
 
 /*Barra navegación horizontal, menú general*/
-#horiz{display:relative;
-        width: 100%;
+#horiz {display:relative;
         margin-top: 5%;
         margin-left:170px;
+        width: 100%;
         font-family: "Trebuchet MS", Helvetica, sans-serif;}
-#horiz a{text-decoration:none;
-          color:inherit;
-          font-size:1em;}
-#horiz li{display:inline-block;
+
+#horiz a {color:inherit;
+          font-size:1em;
+          text-decoration:none;}
+
+#horiz li {position: relative;
+          display:inline-block;
+          padding:10px 4px;
           width: 16vw;
           height:30px;
-          padding:10px 4px;
           background-color:#38b6c3;
-          border:1px solid #38b6c3;
-          text-align:center;
           color:black;
+          border:1px solid #38b6c3;
           font-weight: bold;
-          position: relative;}
-#horiz li:hover{background-color:#85dee7;
+          text-align:center;}
+
+#horiz li:hover {background-color:#85dee7;
                 color:#000;}
-#horiz li>ul{display:none;
+
+#horiz li>ul {display:none;
               width: 15vw;}
 
-#horiz li:hover>ul{display:block;
-                    position:absolute;
+#horiz li:hover>ul {position:absolute;
+                    display:block;
                     top:40px;
                     left:0px;
                     background-color:#85dee7;
@@ -57,87 +62,87 @@ body {margin-bottom: 25px;
 
 /*Navegación apartados internos página*/
 #indice {position:inherit;
+          float:left;
           width:200px;
           height: auto;
           background:#38b6c3;
-          font-size:20px;
-          float:left;}
+          font-size:20px;}
+
 #indice ul {list-style: square;
             color: white;}
+
 #indice ul li {position:relative;
-              margin-right: 25%;
-              margin-bottom: 15px;
-              text-align: center;
-              font-weight: bold;}
-#indice ul li a {line-height: 1.5em;
-                text-decoration:none;
-                color: white;
-                display:block;
-                transition: all ease-out 300ms;}
+                margin-right: 25%;
+                margin-bottom: 15px;
+                font-weight: bold;
+                text-align: center;}
 
-dt{font-weight: bold;
-    padding: 15px 0 10px;}
+#indice ul li a {display:block;
+                  color: white;
+                  text-decoration:none;
+                  line-height: 1.5em;
+                  transition: all ease-out 300ms;}
 
+/*Propiedades generales del cuerpo*/
 article {position: inherit;
-        margin-left: 210px;
-        width: 70%;
-        text-align: left;
-        padding: 60px;
-        background-color: #85dee7;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;}
+          margin-left: 210px;
+          padding: 60px;
+          width: 70%;
+          background-color: #85dee7;
+          font-size: 1em;
+          font-family: "Trebuchet MS", Helvetica, sans-serif;
+          text-align: left;}
 
-.marco{border-width: thick;
-        border-style: double;
-        border-color: #38b6c3;
-        padding: 10px;
-        padding-left: 20px;
-        background-color: #EBD7E1;
-        color: #993366;
-        text-align: left;
-        display: inline-block;}
-
-.historia{display: block;
-          margin:auto;
-          border-style: double;
-          border-width: thick;
-          border-color: #38b6c3;}
-
-.formt{float: right;
-        margin-left: 15px;
-        margin-bottom: 10px;
-        border-style: double;
-        border-width: thick;
-        border-color: #38b6c3;}
-
-aside{text-align: center;}
+aside {text-align: center;}
 
 h2 {text-align: center;}
 
-table{background-color: #EBD7E1;
-      color: #993366;
-      text-align: center;
-      display: inline-block;
-      border-collapse: collapse;
-      padding: 10px;
-      border-width: thick;
-      border-style: double;
-      border-color: #38b6c3;}
+/*Propiedades tablas*/
+table {display: inline-block;
+        padding: 10px;
+        background-color: #EBD7E1;
+        color: #993366;
+        border: thick double #38b6c3;
+        border-collapse: collapse;
+        text-align: center;}
 
-th, caption{padding: 10px 20px;
-            border:none;}
+th, caption {padding: 10px 20px;
+              border:none;}
 
-td{padding: 5px 20px;
+td {padding: 5px 20px;
     border: 1px solid;}
 
-.sub{vertical-align: sub;
+/*Propiedades listas*/
+dt {padding: 15px 0 10px;
+    font-weight: bold;}
+
+/*Propiedades de elementos encajados, ejemplos*/
+.marco {display: inline-block;
+        padding: 10px 20px;
+        background-color: #EBD7E1;
+        color: #993366;
+        border: thick double #38b6c3;
+        text-align: left;}
+
+#historia {display: block;
+          margin:auto;
+          border: thick double #38b6c3;}
+
+.formt {float: right;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        border: thick double #38b6c3;}
+
+.sub {vertical-align: sub;
       font-size: 0.75em;}
 
-footer{text-align: center;
-        background-color: black;
-        position: relative;
+/*Pie de página*/
+footer {position: relative;
+        margin-left: 210px;
         bottom: 0;
         width:80%;
-        font-size: 1em;
-        margin-left: 210px;
         min-height: 25px;
-        color: white;}
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        text-align: center;}

@@ -1,149 +1,147 @@
-body {
-  margin-bottom: 25px;
-  width: 90%;
-  padding-left: 50px;
-  padding-top: 50px;
-  padding-right: 50px;
-  background-color: #C68EAA ;
-  background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.2) 99%),
-  radial-gradient(closest-side, transparent 99%, rgba(0,0,0,.2) 99%);
-  background-size:80px 80px;
-  background-position:0 0, 40px 40px;
-}
+/*Propiedades body*/
+body {margin-bottom: 25px;
+      padding-left: 50px;
+      padding-top: 50px;
+      padding-right: 50px;
+      width: 90%;
+      background-color: #C68EAA ;
+      background-image: radial-gradient(closest-side, transparent 98%, rgba(0,0,0,.2) 99%),
+        radial-gradient(closest-side, transparent 99%, rgba(0,0,0,.2) 99%);
+      background-size:80px 80px;
+      background-position:0 0, 40px 40px;}
 
-.logo-css{
-  margin-left:20%;
-  margin-top: 25px;
-  position:relative;
+/*Propiedades header*/
+.logo-css {position:relative;
+          margin-left:20%;
+          margin-top: 25px;}
 
-}
-#tit{
-  position:absolute;
-  margin-bottom: 10px;
-  width: 50%;
-  text-align: center;
-  font-size: 4vw;
-  display: inline;
-  padding: 20px;
-  background-color:#C68EAA;
-  font-family: Impact, Charcoal, sans-serif;
-}
-#horiz{display:relative;
-        width: 100%;
+#tit {position:absolute;
+      display: inline;
+      margin-bottom: 10px;
+      padding: 20px;
+      width: 50%;
+      background-color:#C68EAA;
+      font-size: 4vw;
+      font-family: Impact, Charcoal, sans-serif;
+      text-align: center;}
+
+/*Barra navegación horizontal, menú general*/
+#horiz {display:relative;
         margin-top: 5%;
         margin-left:170px;
+        width: 100%;
         font-family: "Trebuchet MS", Helvetica, sans-serif;}
-#horiz a{text-decoration:none;
-          color:inherit;
-          font-size:1em;}
-#horiz li{display:inline-block;
+
+#horiz a {color:inherit;
+          font-size:1em;
+          text-decoration:none;}
+
+#horiz li {position: relative;
+          display:inline-block;
+          padding:10px 4px;
           width: 16vw;
           height:30px;
-          padding:10px 4px;
           background-color:#99657f;
-          border:1px solid #99657f;
-          text-align:center;
           color:black;
+          border:1px solid #99657f;
           font-weight: bold;
-          position: relative;}
+          text-align:center;}
 
-#horiz li:hover{
-  background-color:#C68EAA;
-  color:#000;
-}
+#horiz li:hover {background-color:#C68EAA;
+                color:#000;}
 
-#horiz li>ul{
-  display:none;
-}
+#horiz li>ul {display:none;}
 
+#horiz li:hover>ul {position:absolute;
+                    display:block;
+                    top:40px;
+                    left:0px;
+                    background-color:#C68EAA;
+                    color:#000;}
 
-#horiz li:hover>ul{
-  display:block;
-  position:absolute;
-  top:40px;
-  left:0px;
-  background-color:#C68EAA;
-  color:#000;
-}
 /*Navegación apartados internos página*/
 #indice {position:inherit;
+          float:left;
           width:200px;
           height: auto;
           background:#99657f;
-          font-size:20px;
-          float:left;}
+          font-size:20px;}
+
 #indice ul {list-style: square;
             color: black;}
+
 #indice ul li {position:relative;
-              margin-right: 25%;
-              margin-bottom: 15px;
-              text-align: center;
-              font-weight: bold;}
-#indice ul li a {line-height: 1.5em;
-                text-decoration:none;
-                color: black;
-                display:block;
-                transition: all ease-out 300ms;}
-article {
-  position: inherit;
-  margin-left: 210px;
-  text-align: left;
-  font-size: 1em;
-  width:70%;
-  padding: 60px;
-  background-color: #C68EAA;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  }
+                margin-right: 25%;
+                margin-bottom: 15px;
+                font-weight: bold;
+                text-align: center;}
 
-.marco{border-width: thick;
-        border-style: double;
-        border-color: #99657f;
-        padding: 10px;
-        padding-left: 20px;
-        background-color: #85dee7;
-        color: #73264D;
-        text-align: left;
-        display: inline-block;}
+#indice ul li a {display:block;
+                  color: black;
+                  text-decoration:none;
+                  line-height: 1.5em;
+                  transition: all ease-out 300ms;}
 
-h2 {
-  text-align: center;
-}
+/*Propiedades generales del cuerpo*/
+article {position: inherit;
+          margin-left: 210px;
+          padding: 60px;
+          width:70%;
+          background-color: #C68EAA;
+          font-size: 1em;
+          font-family: "Trebuchet MS", Helvetica, sans-serif;
+          text-align: left;}
+
+aside {text-align: center;}
+
+h2 {text-align: center;}
+
+/*Propiedades tablas*/
 table {background-color: #85dee7;
-      color: #73264D;
-      text-align: center;
-      border-collapse:collapse;}
-td, th{padding: 10px;
+        color: #73264D;
+        border-collapse: collapse;
+        text-align: center;}
+
+td, th {padding: 10px;
         border: 1px solid;
         border-collapse: collapse;}
 
-aside{text-align: center;}
-
+/*Propiedades listas*/
 dt {font-weight: bold;
     line-height: 2.5em;}
 
+/*Propiedades de elementos encajados, ejemplos*/
+.marco {display: inline-block;
+        padding: 10px 20px;
+        background-color: #85dee7;
+        color: #73264D;
+        border: thick double #99657f;
+        text-align: left;}
+
 /*Propiedades tabla border-style*/
-#bstyle{border-collapse: separate;
+#bstyle {border-collapse: separate;
         border-spacing: 10px;}
 #bstyle td {border-width: medium;}
-#snone{border-style: none;}
-#sdot{border-style: dotted;}
-#sdash{border-style:dashed;}
-#ssolid{border-style: solid;}
-#sdoub{border-style: double;}
-#sgro{border-style: groove;;}
-#srid{border-style: ridge;;}
-#sinset{border-style:inset;;}
-#sout{border-style: outset;}
-#shid{border-style: hidden;}
+#snone {border-style: none;}
+#sdot {border-style: dotted;}
+#sdash {border-style:dashed;}
+#ssolid {border-style: solid;}
+#sdoub {border-style: double;}
+#sgro {border-style: groove;;}
+#srid {border-style: ridge;;}
+#sinset {border-style:inset;;}
+#sout {border-style: outset;}
+#shid {border-style: hidden;}
 
-#link{color: black;}
+#link {color: black;}
 
-footer{text-align: center;
-        background-color: black;
-        position: relative;
-        bottom: 0;
-        width: 80%;
-        font-size: 1em;
+/*Pie de página*/
+footer {position: relative;
         margin-left: 210px;
+        bottom: 0;
+        width:80%;
         min-height: 25px;
-        color: white;}
+        background-color: black;
+        color: white;
+        font-size: 1em;
+        text-align: center;}
